@@ -1533,26 +1533,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Edson\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Administrador\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Edson\\Desktop\\Projeto-ShellCode\\Projeto-Mobile\\Projeto-Mobile\\Projeto-Mobile.csproj",
+      "projectUniqueName": "C:\\Users\\leonardo.olima2\\source\\repos\\projeto-mobile\\Projeto-Mobile\\Projeto-Mobile.csproj",
       "projectName": "Projeto-Mobile",
-      "projectPath": "C:\\Users\\Edson\\Desktop\\Projeto-ShellCode\\Projeto-Mobile\\Projeto-Mobile\\Projeto-Mobile.csproj",
-      "packagesPath": "C:\\Users\\Edson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Edson\\Desktop\\Projeto-ShellCode\\Projeto-Mobile\\Projeto-Mobile\\obj\\",
+      "projectPath": "C:\\Users\\leonardo.olima2\\source\\repos\\projeto-mobile\\Projeto-Mobile\\Projeto-Mobile.csproj",
+      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leonardo.olima2\\source\\repos\\projeto-mobile\\Projeto-Mobile\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid90"
