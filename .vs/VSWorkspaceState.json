@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Projeto-Mobile",
+    "\\Projeto-Mobile\\Class"
   ],
-  "SelectedNode": "\\Projeto-Mobile.sln",
+  "SelectedNode": "\\Projeto-Mobile\\MainActivity.cs",
   "PreviewInSolutionExplorer": false
 }

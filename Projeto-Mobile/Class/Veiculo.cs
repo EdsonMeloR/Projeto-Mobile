@@ -24,7 +24,7 @@ namespace Projeto_Mobile.Class
         private double altura;
         private double largura;
         private double comprimento;
-        Banco db;
+        nco db;
         //Propiedades
         public int Id { get => id; set => id = value; }
         public string Placa { get => placa; set => placa = value; }

@@ -729,6 +729,15 @@
         "runtime": {
           "lib/monoandroid90/Xamarin.Essentials.dll": {}
         }
+      },
+      "Xamarin.MySql.Data/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid/MySql.Data.CF.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/MySql.Data.CF.dll": {}
+        }
       }
     }
   },
@@ -1522,6 +1531,20 @@
         "xamarin.essentials.1.1.0.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
+    },
+    "Xamarin.MySql.Data/1.0.1": {
+      "sha512": "03IU9p5NTWYXFM7readTTxXUJKavz3LXJA2DMc+rs6dIATpQHqAgy9X6I2Z/OF7f1yYQIOnCfQcMlGvJgy0QZw==",
+      "type": "package",
+      "path": "xamarin.mysql.data/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/MySql.Data.CF.dll",
+        "lib/MonoTouch/MySql.Data.CF.dll",
+        "lib/xamarinios/MySql.Data.CF.dll",
+        "xamarin.mysql.data.1.0.1.nupkg.sha512",
+        "xamarin.mysql.data.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -1529,7 +1552,8 @@
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.1",
       "Xamarin.Android.Support.CustomTabs >= 28.0.0.1",
       "Xamarin.Android.Support.Design >= 28.0.0.1",
-      "Xamarin.Essentials >= 1.1.0"
+      "Xamarin.Essentials >= 1.1.0",
+      "Xamarin.MySql.Data >= 1.0.1"
     ]
   },
   "packageFolders": {
@@ -1580,6 +1604,10 @@
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.1.0, )"
+          },
+          "Xamarin.MySql.Data": {
+            "target": "Package",
+            "version": "[1.0.1, )"
           }
         }
       }
