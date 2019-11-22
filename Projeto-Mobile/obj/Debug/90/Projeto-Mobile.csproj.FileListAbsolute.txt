@@ -1,0 +1,6 @@
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\Projeto-Mobile.nuget.stamp
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\Projeto-Mobile.csprojAssemblyReference.cache
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\libraryimports.cache.stamp
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res.flag
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\Projeto-Mobile.csproj.CoreCompileInputs.cache
