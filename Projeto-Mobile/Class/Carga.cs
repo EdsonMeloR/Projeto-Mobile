@@ -70,7 +70,7 @@ namespace Projeto_Mobile.Class
         {
             db = new Banco();
             var comm = db.AbrirConexao();
-            comm.CommandType = CommandType.StoredProcedure;
+            comm.CommandType = System.Data.CommandType.StoredProcedure;
             comm.CommandText = "insert_carga";
             comm.Parameters.Add("_idpedido", MySqlDbType.Int32).Value = _idPedido;
             comm.Parameters.Add("_peso", MySqlDbType.Decimal).Value = _peso;
@@ -89,7 +89,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "update_carga";
                 comm.Parameters.Add("_peso", MySqlDbType.Decimal).Value = _peso;
                 comm.Parameters.Add("_largura", MySqlDbType.Decimal).Value = _largura;

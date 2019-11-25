@@ -9,6 +9,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using MySql.Data.MySqlClient;
+using System.Security.Cryptography;
 
 namespace Projeto_Mobile.Class
 {
@@ -52,7 +53,7 @@ namespace Projeto_Mobile.Class
         {
             db = new Banco();
             var comm = db.AbrirConexao();
-            comm.CommandType = CommandType.StoredProcedure;
+            comm.CommandType = System.Data.CommandType.StoredProcedure;
             comm.CommandText = "insert_cliente";
             comm.Parameters.Add("_razaosocial", MySqlDbType.VarChar).Value = _razaoSocial;
             comm.Parameters.Add("_cnpj", MySqlDbType.VarChar).Value = _cnpj;
@@ -73,7 +74,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "update_cliente";
                 comm.Parameters.Add("_idcliente", MySqlDbType.Int32).Value = _idcliente;
                 comm.Parameters.Add("_telefone", MySqlDbType.VarChar).Value = _telefone;
@@ -178,7 +179,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "update_password_cliente";
                 comm.Parameters.Add("_idcliente", MySqlDbType.Int32).Value = _idcliente;
                 comm.Parameters.Add("_senha", MySqlDbType.VarChar).Value = _senhanova;

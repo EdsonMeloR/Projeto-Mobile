@@ -45,7 +45,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "insert_pedidosenderecos";
                 comm.Parameters.Add("_idEndereco", MySqlDbType.Int32).Value = _idEndereco;
                 comm.Parameters.Add("_idPedido", MySqlDbType.Int32).Value = _idPedido;
@@ -66,7 +66,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "update_pedidosenderecos";
                 comm.Parameters.Add("_idEndereco", MySqlDbType.Int32).Value = _idEndereco;
                 comm.Parameters.Add("_idTipoEndereco", MySqlDbType.Int32).Value = _idTipoEndereco;
@@ -89,7 +89,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "view_listar_pedidosenderecos";
                 var dr = comm.ExecuteReader();
                 while (dr.Read())
@@ -120,7 +120,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "view_listar_pedidosenderecos";
                 comm.Parameters.Add("_idEndereco", MySqlDbType.Int32).Value = _idEndereco;
                 comm.Parameters.Add("_idPedido", MySqlDbType.Int32).Value = _idPedido;

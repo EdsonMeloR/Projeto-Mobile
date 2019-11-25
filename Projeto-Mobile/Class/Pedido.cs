@@ -54,7 +54,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "insert_pedido";
                 comm.Parameters.Add("_situacao", MySqlDbType.VarChar).Value = situacao;
                 comm.Parameters.Add("_retirar", MySqlDbType.Bit).Value = retirar;
@@ -82,7 +82,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "update_pedido";
                 comm.Parameters.Add("_situacao", MySqlDbType.VarChar).Value = situacao;
                 comm.Parameters.Add("_idpedido", MySqlDbType.Int32).Value = id;
@@ -127,7 +127,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "viewPedidosClientes";
                 return comm.ExecuteReader();
             }
@@ -150,7 +150,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "select * from pedidos where cliente_IdCliente = " + idCliente;
                 var dr = comm.ExecuteReader();
                 while (dr.Read())

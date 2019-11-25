@@ -36,7 +36,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "insert_itensnotatransporte";
                 comm.Parameters.Add("_idcarga", MySqlDbType.Int32).Value = idcarga;
                 comm.Parameters.Add("_idnotatransporte", MySqlDbType.Int32).Value = idnota;

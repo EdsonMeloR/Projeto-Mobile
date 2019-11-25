@@ -68,11 +68,13 @@
     <Compile Include="Class\Entrega.cs" />
     <Compile Include="Class\ItensNotaTransporte.cs" />
     <Compile Include="Class\Motorista.cs" />
+    <Compile Include="Class\Niveis.cs" />
     <Compile Include="Class\NotaTransporte.cs" />
     <Compile Include="Class\Pedido.cs" />
     <Compile Include="Class\PedidosEndereco.cs" />
     <Compile Include="Class\TipoCarga.cs" />
     <Compile Include="Class\TipoEndereco.cs" />
+    <Compile Include="Class\TipoFrete.cs" />
     <Compile Include="Class\Usuario.cs" />
     <Compile Include="Class\Veiculo.cs" />
     <Compile Include="MainActivity.cs" />

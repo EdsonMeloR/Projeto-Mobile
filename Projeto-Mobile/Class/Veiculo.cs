@@ -24,7 +24,7 @@ namespace Projeto_Mobile.Class
         private double altura;
         private double largura;
         private double comprimento;
-        nco db;
+        Banco db;
         //Propiedades
         public int Id { get => id; set => id = value; }
         public string Placa { get => placa; set => placa = value; }
@@ -60,7 +60,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "insert_veiculo";
                 comm.Parameters.Add("_placa", MySqlDbType.VarChar).Value = placa;
                 comm.Parameters.Add("_marca", MySqlDbType.VarChar).Value = marca;
@@ -90,7 +90,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "update_veiculo";
                 comm.Parameters.Add("_id", MySqlDbType.Int32).Value = id;
                 comm.Parameters.Add("_pesoMaximo", MySqlDbType.Decimal).Value = pesoMaximo;

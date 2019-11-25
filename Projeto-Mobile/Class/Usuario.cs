@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Data;
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
 using MySql.Data.MySqlClient;
 using System.Security.Cryptography;
 using System.Net.Mail;
 using System.Net;
 
-namespace Projeto_Desktop.Classes
+namespace Projeto_Mobile.Class
 {
     public class Usuario
     {
@@ -59,7 +63,7 @@ namespace Projeto_Desktop.Classes
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "insert_usuario";
                 comm.Parameters.Add("_nome", MySqlDbType.VarChar).Value = nome;
                 comm.Parameters.Add("_cpf", MySqlDbType.VarChar).Value = cpf;
@@ -68,9 +72,9 @@ namespace Projeto_Desktop.Classes
                 comm.Parameters.Add("_email", MySqlDbType.VarChar).Value = email;
                 comm.Parameters.Add("_nivel", MySqlDbType.Int32).Value = idNivel;
                 comm.Parameters.Add("_firstlogin", MySqlDbType.Bit).Value = 1;
-                this.Id = Convert.ToInt32(comm.ExecuteScalar());                
+                this.Id = Convert.ToInt32(comm.ExecuteScalar());
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 e.Message.ToString();
             }
@@ -84,10 +88,10 @@ namespace Projeto_Desktop.Classes
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "update_usuario";
                 comm.Parameters.Add("_id", MySqlDbType.Int32).Value = id;
-                comm.Parameters.Add("_telefone", MySqlDbType.VarChar).Value = telefone;                
+                comm.Parameters.Add("_telefone", MySqlDbType.VarChar).Value = telefone;
                 comm.Parameters.Add("_email", MySqlDbType.VarChar).Value = email;
                 comm.ExecuteNonQuery();
                 return true;
@@ -109,8 +113,8 @@ namespace Projeto_Desktop.Classes
             {
                 var comm = db.AbrirConexao();
                 comm.CommandText = "select * from usuario where idUsuario = " + id;
-                var dr = comm.ExecuteReader();              
-                while(dr.Read())
+                var dr = comm.ExecuteReader();
+                while (dr.Read())
                 {
                     this.Id = dr.GetInt32(0);
                     this.Nome = dr.GetString(1);
@@ -124,7 +128,7 @@ namespace Projeto_Desktop.Classes
             }
             catch (Exception e)
             {
-                e.Message.ToString();                
+                e.Message.ToString();
             }
         }
         /// <summary>
@@ -188,7 +192,7 @@ namespace Projeto_Desktop.Classes
             {
                 e.Message.ToString();
                 return null;
-            }            
+            }
         }
         public bool EfetuarLogin(string cpf, string senha)
         {
@@ -197,7 +201,7 @@ namespace Projeto_Desktop.Classes
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandText = "select * from usuario where Cpf = '" + cpf + "' && Senha = '"+senhac+"'";
+                comm.CommandText = "select * from usuario where Cpf = '" + cpf + "' && Senha = '" + senhac + "'";
                 var dr = comm.ExecuteReader();
                 IdNivel = new Niveis();
                 while (dr.Read())
@@ -215,14 +219,14 @@ namespace Projeto_Desktop.Classes
                     return true;
 
                 else
-                    return false;                
+                    return false;
             }
             catch (Exception e)
             {
                 e.Message.ToString();
                 return false;
             }
-        }       
+        }
         /// <summary>
         /// Alterando senha do usuario
         /// </summary>
@@ -235,7 +239,7 @@ namespace Projeto_Desktop.Classes
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandText = "update usuario set Senha = '" + senhac + "' where idUsuario =" + id;                
+                comm.CommandText = "update usuario set Senha = '" + senhac + "' where idUsuario =" + id;
                 comm.ExecuteNonQuery();
                 return true;
             }
@@ -254,13 +258,13 @@ namespace Projeto_Desktop.Classes
             db = new Banco();
             try
             {
-                var comm = db.AbrirConexao();                
-                comm.CommandText = "update usuario set PrimeiroLogin = 0";                
-                comm.ExecuteNonQuery();                
+                var comm = db.AbrirConexao();
+                comm.CommandText = "update usuario set PrimeiroLogin = 0";
+                comm.ExecuteNonQuery();
             }
             catch (Exception e)
             {
-                e.Message.ToString();                
+                e.Message.ToString();
             }
         }
         /// <summary>
@@ -285,7 +289,7 @@ namespace Projeto_Desktop.Classes
             {
                 var comm = db.AbrirConexao();
                 comm.CommandText = "select * from usuario where Cpf = '" + CPF + "'";
-                var dr = comm.ExecuteReader();                
+                var dr = comm.ExecuteReader();
                 while (dr.Read())
                 {
                     this.Id = dr.GetInt32(0);
@@ -308,7 +312,7 @@ namespace Projeto_Desktop.Classes
                 //define o conteúdo
                 var senhaRecuperada = GerarSenhaMd5(DateTime.Now.ToString());
                 mail.Subject = "Esté é um email de recuperação de senha da prosperity";
-                mail.Body = "Utilize esta senha : "+ senhaRecuperada;
+                mail.Body = "Utilize esta senha : " + senhaRecuperada;
                 mail.SubjectEncoding = Encoding.GetEncoding("ISO-8859-1");
                 mail.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
 
@@ -316,13 +320,13 @@ namespace Projeto_Desktop.Classes
                 SmtpClient smtp = new SmtpClient("smtp.gmail.com");
                 smtp.EnableSsl = true;
                 smtp.Port = 587;
-                smtp.Credentials = new NetworkCredential("prosperitylogistica@gmail.com", "prospe123");
+                smtp.Credentials = new  NetworkCredential("prosperitylogistica@gmail.com", "prospe123");
                 smtp.Send(mail);
 
                 //Redefine a senha
                 comm.Connection.Close();
                 comm.Connection.Open();
-                comm.CommandText = "update usuario set Senha = '"+ GerarSenhaMd5(senhaRecuperada)+"', PrimeiroLogin = 1 where idUsuario = "+this.Id;
+                comm.CommandText = "update usuario set Senha = '" + GerarSenhaMd5(senhaRecuperada) + "', PrimeiroLogin = 1 where idUsuario = " + this.Id;
                 comm.ExecuteNonQuery();
                 return true;
             }

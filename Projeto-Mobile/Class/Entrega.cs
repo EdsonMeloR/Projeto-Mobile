@@ -51,7 +51,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "insert_entrega";
                 comm.Parameters.Add("_assinatura", MySqlDbType.Blob).Value = _assinatura;
                 comm.Parameters.Add("_rg", MySqlDbType.VarChar).Value = _rg;
@@ -79,7 +79,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "update_entrega";
                 comm.Parameters.Add("_identrega", MySqlDbType.Int32).Value = id;
                 comm.Parameters.Add("status", MySqlDbType.VarChar).Value = status;

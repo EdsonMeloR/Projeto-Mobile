@@ -54,7 +54,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "insert_notatransporte";
                 comm.Parameters.Add("_idmotorista", MySqlDbType.Int32).Value = idMotorista;
                 comm.Parameters.Add("_idveiculo", MySqlDbType.Int32).Value = idVeiculo;
@@ -88,7 +88,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "update_notatransporte";
                 comm.Parameters.Add("_idmotorista", MySqlDbType.Int32).Value = idMotorista;
                 comm.Parameters.Add("_idveiculo", MySqlDbType.Int32).Value = idVeiculo;

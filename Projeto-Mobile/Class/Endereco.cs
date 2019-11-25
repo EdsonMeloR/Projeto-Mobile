@@ -56,7 +56,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "insert_endereco";
                 comm.Parameters.Add("_logradouro", MySqlDbType.VarChar).Value = _logradouro;
                 comm.Parameters.Add("_cep", MySqlDbType.VarChar).Value = _cep;
@@ -84,7 +84,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "update_endereco";
                 comm.Parameters.Add("_logradouro", MySqlDbType.VarChar).Value = _logradouro;
                 comm.Parameters.Add("_cep", MySqlDbType.VarChar).Value = _cep;
@@ -203,7 +203,7 @@ namespace Projeto_Mobile.Class
             try
             {
                 var comm = db.AbrirConexao();
-                comm.CommandType = CommandType.StoredProcedure;
+                comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "delete_endereco";
                 comm.Parameters.Add("_idendereco", MySqlDbType.Int32).Value = _idEndereco;
                 comm.Parameters.Add("_idcliente", MySqlDbType.Int32).Value = _idcliente;
