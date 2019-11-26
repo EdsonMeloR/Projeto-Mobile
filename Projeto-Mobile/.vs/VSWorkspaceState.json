@@ -1,14 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Assets",
-    "\\bin",
-    "\\bin\\Debug",
-    "\\bin\\Release",
-    "\\obj\\Debug",
-    "\\obj\\Debug\\90",
-    "\\obj\\Release"
+    "\\bin\\Release"
   ],
-  "SelectedNode": "\\Class",
-  "PreviewInSolutionExplorer": false
+  "SelectedNode": "\\bin",
+  "PreviewInSolutionExplorer": true
 }
