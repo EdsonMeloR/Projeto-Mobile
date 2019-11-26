@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"	
+	android:minWidth = "25px"
+	android:minHeight = "25px"
+	android:background = "#282c33">
+
+
+	<ImageView
+	android:src="@drawable/icone"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/imageView1"
+	/>
+
+	<TextView
+		android:text = "Bem-vindo!"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity = "center"
+		android:id="@+id/textView1" 
+	/>
+
+
+
+	<Button
+		android:text = "Relatório"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/botao_logar"
+		android:layout_gravity = "center"
+	/>
+	
+	<Button
+		android:text = "Entregas"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/botao_logar"
+		android:layout_gravity = "center"
+	/>
+
+
+
+
+</LinearLayout>

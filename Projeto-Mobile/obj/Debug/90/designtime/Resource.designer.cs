@@ -1917,14 +1917,14 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F06002A
 			public const int cardview_shadow_start_color = 2131099690;
 			
-			// aapt resource value: 0x7F040004
-			public const int colorAccent = 2130968580;
+			// aapt resource value: 0x7F050004
+			public const int colorAccent = 2131034116;
 			
-			// aapt resource value: 0x7F040002
-			public const int colorPrimary = 2130968578;
+			// aapt resource value: 0x7F050002
+			public const int colorPrimary = 2131034114;
 			
-			// aapt resource value: 0x7F040003
-			public const int colorPrimaryDark = 2130968579;
+			// aapt resource value: 0x7F050003
+			public const int colorPrimaryDark = 2131034115;
 			
 			// aapt resource value: 0x7F06002B
 			public const int design_bottom_navigation_shadow_color = 2131099691;
@@ -1995,8 +1995,8 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F060041
 			public const int highlighted_text_material_light = 2131099713;
 			
-			// aapt resource value: 0x7F040005
-			public const int ic_launcher_background = 2130968581;
+			// aapt resource value: 0x7F050005
+			public const int ic_launcher_background = 2131034117;
 			
 			// aapt resource value: 0x7F060042
 			public const int material_blue_grey_800 = 2131099714;
@@ -3137,6 +3137,9 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F09005C
 			public const int design_snackbar_background = 2131296348;
 			
+			// aapt resource value: 0x7F010002
+			public const int icone = 2130771970;
+			
 			// aapt resource value: 0x7F09005D
 			public const int ic_mtrl_chip_checked_black = 2131296349;
 			
@@ -3282,8 +3285,8 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F0C0007
 			public const int blocking = 2131492871;
 			
-			// aapt resource value: 0x7F020005
-			public const int botao_logar = 2130837509;
+			// aapt resource value: 0x7F020006
+			public const int botao_logar = 2130837510;
 			
 			// aapt resource value: 0x7F0C0008
 			public const int bottom = 2131492872;
@@ -3357,8 +3360,8 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F0C002B
 			public const int edit_query = 2131492907;
 			
-			// aapt resource value: 0x7F020003
-			public const int edt_login_main = 2130837507;
+			// aapt resource value: 0x7F020005
+			public const int edt_login_main = 2130837509;
 			
 			// aapt resource value: 0x7F020004
 			public const int edt_senha_main = 2130837508;
@@ -3402,8 +3405,8 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
-			// aapt resource value: 0x7F020002
-			public const int imageView1 = 2130837506;
+			// aapt resource value: 0x7F020003
+			public const int imageView1 = 2130837507;
 			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
@@ -3635,6 +3638,9 @@ namespace Projeto_Mobile
 			
 			// aapt resource value: 0x7F0C0082
 			public const int textSpacerNoTitle = 2131492994;
+			
+			// aapt resource value: 0x7F020002
+			public const int textView1 = 2130837506;
 			
 			// aapt resource value: 0x7F0C0083
 			public const int text_input_password_toggle = 2131492995;
@@ -3873,17 +3879,32 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F0F001C
 			public const int abc_tooltip = 2131689500;
 			
-			// aapt resource value: 0x7F010002
-			public const int activity_main = 2130771970;
+			// aapt resource value: 0x7F030002
+			public const int activity_colaborador = 2130903042;
+			
+			// aapt resource value: 0x7F030003
+			public const int activity_detentrega = 2130903043;
+			
+			// aapt resource value: 0x7F030004
+			public const int activity_entrega = 2130903044;
+			
+			// aapt resource value: 0x7F030005
+			public const int activity_login = 2130903045;
+			
+			// aapt resource value: 0x7F030006
+			public const int activity_main = 2130903046;
+			
+			// aapt resource value: 0x7F030007
+			public const int activity_principal = 2130903047;
+			
+			// aapt resource value: 0x7F030008
+			public const int activity_relatorio = 2130903048;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int browser_actions_context_menu_page = 2131689473;
 			
 			// aapt resource value: 0x7F0F0002
 			public const int browser_actions_context_menu_row = 2131689474;
-			
-			// aapt resource value: 0x7F010003
-			public const int colaborador = 2130771971;
 			
 			// aapt resource value: 0x7F0F001D
 			public const int design_bottom_navigation_item = 2131689501;
@@ -3927,15 +3948,6 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F0F002A
 			public const int design_text_input_password_icon = 2131689514;
 			
-			// aapt resource value: 0x7F010004
-			public const int entrega = 2130771972;
-			
-			// aapt resource value: 0x7F010005
-			public const int inicio = 2130771973;
-			
-			// aapt resource value: 0x7F010006
-			public const int login = 2130771974;
-			
 			// aapt resource value: 0x7F0F002B
 			public const int mtrl_layout_snackbar = 2131689515;
 			
@@ -3959,9 +3971,6 @@ namespace Projeto_Mobile
 			
 			// aapt resource value: 0x7F0F0006
 			public const int notification_template_part_time = 2131689478;
-			
-			// aapt resource value: 0x7F010007
-			public const int relatorio = 2130771975;
 			
 			// aapt resource value: 0x7F0F0033
 			public const int select_dialog_item_material = 2131689523;
@@ -3988,14 +3997,14 @@ namespace Projeto_Mobile
 		public partial class Mipmap
 		{
 			
-			// aapt resource value: 0x7F030002
-			public const int ic_launcher = 2130903042;
+			// aapt resource value: 0x7F040002
+			public const int ic_launcher = 2130968578;
 			
-			// aapt resource value: 0x7F030004
-			public const int ic_launcher_foreground = 2130903044;
+			// aapt resource value: 0x7F040004
+			public const int ic_launcher_foreground = 2130968580;
 			
-			// aapt resource value: 0x7F030003
-			public const int ic_launcher_round = 2130903043;
+			// aapt resource value: 0x7F040003
+			public const int ic_launcher_round = 2130968579;
 			
 			static Mipmap()
 			{
@@ -4127,17 +4136,17 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F150027
 			public const int abc_toolbar_collapse_description = 2132082727;
 			
-			// aapt resource value: 0x7F050003
-			public const int action_settings = 2131034115;
+			// aapt resource value: 0x7F060003
+			public const int action_settings = 2131099651;
 			
 			// aapt resource value: 0x7F150028
 			public const int appbar_scrolling_view_behavior = 2132082728;
 			
-			// aapt resource value: 0x7F050002
-			public const int app_name = 2131034114;
+			// aapt resource value: 0x7F060004
+			public const int app_logar = 2131099652;
 			
-			// aapt resource value: 0x7F050004
-			public const int botao_logar = 2131034116;
+			// aapt resource value: 0x7F060002
+			public const int app_name = 2131099650;
 			
 			// aapt resource value: 0x7F150029
 			public const int bottom_sheet_behavior = 2132082729;
@@ -4212,8 +4221,8 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F160006
 			public const int Animation_Design_BottomSheetDialog = 2132148230;
 			
-			// aapt resource value: 0x7F060002
-			public const int AppTheme = 2131099650;
+			// aapt resource value: 0x7F070002
+			public const int AppTheme = 2131165186;
 			
 			// aapt resource value: 0x7F160007
 			public const int Base_AlertDialog_AppCompat = 2132148231;
@@ -5729,11 +5738,11 @@ namespace Projeto_Mobile
 			public static int[] ActionBarLayout = new int[] {
 					16842931};
 			
-			// aapt resource value: 0x7F070082
-			public const int ActionBarLayout_android_layout_gravity = 2131165314;
+			// aapt resource value: 0x7F080082
+			public const int ActionBarLayout_android_layout_gravity = 2131230850;
 			
-			// aapt resource value: 0x7F070052
-			public const int ActionBar_background = 2131165266;
+			// aapt resource value: 0x7F080052
+			public const int ActionBar_background = 2131230802;
 			
 			// aapt resource value: 0x1
 			public const int ActionBar_backgroundSplit = 1;
@@ -5822,8 +5831,8 @@ namespace Projeto_Mobile
 			public static int[] ActionMenuItemView = new int[] {
 					16843071};
 			
-			// aapt resource value: 0x7F070084
-			public const int ActionMenuItemView_android_minWidth = 2131165316;
+			// aapt resource value: 0x7F080084
+			public const int ActionMenuItemView_android_minWidth = 2131230852;
 			
 			public static int[] ActionMenuView = new int[] {
 					0};
@@ -5836,8 +5845,8 @@ namespace Projeto_Mobile
 					2130968951,
 					2130969030};
 			
-			// aapt resource value: 0x7F070086
-			public const int ActionMode_background = 2131165318;
+			// aapt resource value: 0x7F080086
+			public const int ActionMode_background = 2131230854;
 			
 			// aapt resource value: 0x1
 			public const int ActionMode_backgroundSplit = 1;
@@ -5858,8 +5867,8 @@ namespace Projeto_Mobile
 					2130968763,
 					2130968824};
 			
-			// aapt resource value: 0x7F070093
-			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 2131165331;
+			// aapt resource value: 0x7F080093
+			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 2131230867;
 			
 			// aapt resource value: 0x1
 			public const int ActivityChooserView_initialActivityCount = 1;
@@ -5874,8 +5883,8 @@ namespace Projeto_Mobile
 					2130968924,
 					2130968925};
 			
-			// aapt resource value: 0x7F070096
-			public const int AlertDialog_android_layout = 2131165334;
+			// aapt resource value: 0x7F080096
+			public const int AlertDialog_android_layout = 2131230870;
 			
 			// aapt resource value: 0x1
 			public const int AlertDialog_buttonIconDimen = 1;
@@ -5906,8 +5915,8 @@ namespace Projeto_Mobile
 					16843157,
 					16843156};
 			
-			// aapt resource value: 0x7F070730
-			public const int AnimatedStateListDrawableCompat_android_constantSize = 2131167024;
+			// aapt resource value: 0x7F080730
+			public const int AnimatedStateListDrawableCompat_android_constantSize = 2131232560;
 			
 			// aapt resource value: 0x1
 			public const int AnimatedStateListDrawableCompat_android_dither = 1;
@@ -5928,8 +5937,8 @@ namespace Projeto_Mobile
 					16843161,
 					16842960};
 			
-			// aapt resource value: 0x7F070737
-			public const int AnimatedStateListDrawableItem_android_drawable = 2131167031;
+			// aapt resource value: 0x7F080737
+			public const int AnimatedStateListDrawableItem_android_drawable = 2131232567;
 			
 			// aapt resource value: 0x1
 			public const int AnimatedStateListDrawableItem_android_id = 1;
@@ -5940,8 +5949,8 @@ namespace Projeto_Mobile
 					16843851,
 					16843849};
 			
-			// aapt resource value: 0x7F070740
-			public const int AnimatedStateListDrawableTransition_android_drawable = 2131167040;
+			// aapt resource value: 0x7F080740
+			public const int AnimatedStateListDrawableTransition_android_drawable = 2131232576;
 			
 			// aapt resource value: 0x1
 			public const int AnimatedStateListDrawableTransition_android_fromId = 1;
@@ -5966,8 +5975,8 @@ namespace Projeto_Mobile
 					2130968940,
 					2130968941};
 			
-			// aapt resource value: 0x7F070112
-			public const int AppBarLayoutStates_state_collapsed = 2131165458;
+			// aapt resource value: 0x7F080112
+			public const int AppBarLayoutStates_state_collapsed = 2131230994;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayoutStates_state_collapsible = 1;
@@ -5978,8 +5987,8 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x3
 			public const int AppBarLayoutStates_state_lifted = 3;
 			
-			// aapt resource value: 0x7F070105
-			public const int AppBarLayout_android_background = 2131165445;
+			// aapt resource value: 0x7F080105
+			public const int AppBarLayout_android_background = 2131230981;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayout_android_keyboardNavigationCluster = 1;
@@ -5997,8 +6006,8 @@ namespace Projeto_Mobile
 					2130968852,
 					2130968853};
 			
-			// aapt resource value: 0x7F070117
-			public const int AppBarLayout_Layout_layout_scrollFlags = 2131165463;
+			// aapt resource value: 0x7F080117
+			public const int AppBarLayout_Layout_layout_scrollFlags = 2131230999;
 			
 			// aapt resource value: 0x1
 			public const int AppBarLayout_Layout_layout_scrollInterpolator = 1;
@@ -6012,8 +6021,8 @@ namespace Projeto_Mobile
 					2130969018,
 					2130969019};
 			
-			// aapt resource value: 0x7F070120
-			public const int AppCompatImageView_android_src = 2131165472;
+			// aapt resource value: 0x7F080120
+			public const int AppCompatImageView_android_src = 2131231008;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatImageView_srcCompat = 1;
@@ -6030,8 +6039,8 @@ namespace Projeto_Mobile
 					2130969016,
 					2130969017};
 			
-			// aapt resource value: 0x7F070125
-			public const int AppCompatSeekBar_android_thumb = 2131165477;
+			// aapt resource value: 0x7F080125
+			public const int AppCompatSeekBar_android_thumb = 2131231013;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatSeekBar_tickMark = 1;
@@ -6051,8 +6060,8 @@ namespace Projeto_Mobile
 					16843117,
 					16842804};
 			
-			// aapt resource value: 0x7F070130
-			public const int AppCompatTextHelper_android_drawableBottom = 2131165488;
+			// aapt resource value: 0x7F080130
+			public const int AppCompatTextHelper_android_drawableBottom = 2131231024;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTextHelper_android_drawableEnd = 1;
@@ -6085,8 +6094,8 @@ namespace Projeto_Mobile
 					2130968855,
 					2130968983};
 			
-			// aapt resource value: 0x7F070138
-			public const int AppCompatTextView_android_textAppearance = 2131165496;
+			// aapt resource value: 0x7F080138
+			public const int AppCompatTextView_android_textAppearance = 2131231032;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTextView_autoSizeMaxTextSize = 1;
@@ -6241,8 +6250,8 @@ namespace Projeto_Mobile
 					2130969052,
 					2130969053};
 			
-			// aapt resource value: 0x7F070150
-			public const int AppCompatTheme_actionBarDivider = 2131165520;
+			// aapt resource value: 0x7F080150
+			public const int AppCompatTheme_actionBarDivider = 2131231056;
 			
 			// aapt resource value: 0x1
 			public const int AppCompatTheme_actionBarItemBackground = 1;
@@ -6612,8 +6621,8 @@ namespace Projeto_Mobile
 					2130968775,
 					2130968806};
 			
-			// aapt resource value: 0x7F070272
-			public const int BottomAppBar_backgroundTint = 2131165810;
+			// aapt resource value: 0x7F080272
+			public const int BottomAppBar_backgroundTint = 2131231346;
 			
 			// aapt resource value: 0x1
 			public const int BottomAppBar_fabAlignmentMode = 1;
@@ -6642,8 +6651,8 @@ namespace Projeto_Mobile
 					2130968840,
 					2130968876};
 			
-			// aapt resource value: 0x7F070279
-			public const int BottomNavigationView_elevation = 2131165817;
+			// aapt resource value: 0x7F080279
+			public const int BottomNavigationView_elevation = 2131231353;
 			
 			// aapt resource value: 0x1
 			public const int BottomNavigationView_itemBackground = 1;
@@ -6678,8 +6687,8 @@ namespace Projeto_Mobile
 					2130968636,
 					2130968637};
 			
-			// aapt resource value: 0x7F070290
-			public const int BottomSheetBehavior_Layout_behavior_fitToContents = 2131165840;
+			// aapt resource value: 0x7F080290
+			public const int BottomSheetBehavior_Layout_behavior_fitToContents = 2131231376;
 			
 			// aapt resource value: 0x1
 			public const int BottomSheetBehavior_Layout_behavior_hideable = 1;
@@ -6693,8 +6702,8 @@ namespace Projeto_Mobile
 			public static int[] ButtonBarLayout = new int[] {
 					2130968615};
 			
-			// aapt resource value: 0x7F070295
-			public const int ButtonBarLayout_allowStacking = 2131165845;
+			// aapt resource value: 0x7F080295
+			public const int ButtonBarLayout_allowStacking = 2131231381;
 			
 			public static int[] CardView = new int[] {
 					16843072,
@@ -6711,8 +6720,8 @@ namespace Projeto_Mobile
 					2130968731,
 					2130968732};
 			
-			// aapt resource value: 0x7F070297
-			public const int CardView_android_minHeight = 2131165847;
+			// aapt resource value: 0x7F080297
+			public const int CardView_android_minHeight = 2131231383;
 			
 			// aapt resource value: 0x1
 			public const int CardView_android_minWidth = 1;
@@ -6794,8 +6803,8 @@ namespace Projeto_Mobile
 					2130968926,
 					2130968927};
 			
-			// aapt resource value: 0x7F070346
-			public const int ChipGroup_checkedChip = 2131166022;
+			// aapt resource value: 0x7F080346
+			public const int ChipGroup_checkedChip = 2131231558;
 			
 			// aapt resource value: 0x1
 			public const int ChipGroup_chipSpacing = 1;
@@ -6812,8 +6821,8 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x5
 			public const int ChipGroup_singleSelection = 5;
 			
-			// aapt resource value: 0x7F070311
-			public const int Chip_android_checkable = 2131165969;
+			// aapt resource value: 0x7F080311
+			public const int Chip_android_checkable = 2131231505;
 			
 			// aapt resource value: 0x1
 			public const int Chip_android_ellipsize = 1;
@@ -6932,8 +6941,8 @@ namespace Projeto_Mobile
 					2130969021,
 					2130969031};
 			
-			// aapt resource value: 0x7F070353
-			public const int CollapsingToolbarLayout_collapsedTitleGravity = 2131166035;
+			// aapt resource value: 0x7F080353
+			public const int CollapsingToolbarLayout_collapsedTitleGravity = 2131231571;
 			
 			// aapt resource value: 0x1
 			public const int CollapsingToolbarLayout_collapsedTitleTextAppearance = 1;
@@ -6966,8 +6975,8 @@ namespace Projeto_Mobile
 					2130968847,
 					2130968848};
 			
-			// aapt resource value: 0x7F070370
-			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 2131166064;
+			// aapt resource value: 0x7F080370
+			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 2131231600;
 			
 			// aapt resource value: 0x1
 			public const int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
@@ -6995,8 +7004,8 @@ namespace Projeto_Mobile
 					16843551,
 					16843173};
 			
-			// aapt resource value: 0x7F070003
-			public const int ColorStateListItem_alpha = 2131165187;
+			// aapt resource value: 0x7F080003
+			public const int ColorStateListItem_alpha = 2131230723;
 			
 			// aapt resource value: 0x1
 			public const int ColorStateListItem_android_alpha = 1;
@@ -7009,8 +7018,8 @@ namespace Projeto_Mobile
 					2130968663,
 					2130968664};
 			
-			// aapt resource value: 0x7F070373
-			public const int CompoundButton_android_button = 2131166067;
+			// aapt resource value: 0x7F080373
+			public const int CompoundButton_android_button = 2131231603;
 			
 			// aapt resource value: 0x1
 			public const int CompoundButton_buttonTint = 1;
@@ -7022,8 +7031,8 @@ namespace Projeto_Mobile
 					2130968589,
 					2130968596};
 			
-			// aapt resource value: 0x7F070041
-			public const int CoordinatorLayout_keylines = 2131165249;
+			// aapt resource value: 0x7F080041
+			public const int CoordinatorLayout_keylines = 2131230785;
 			
 			public static int[] CoordinatorLayout_Layout = new int[] {
 					16842931,
@@ -7034,8 +7043,8 @@ namespace Projeto_Mobile
 					2130968594,
 					2130968595};
 			
-			// aapt resource value: 0x7F070044
-			public const int CoordinatorLayout_Layout_android_layout_gravity = 2131165252;
+			// aapt resource value: 0x7F080044
+			public const int CoordinatorLayout_Layout_android_layout_gravity = 2131230788;
 			
 			// aapt resource value: 0x1
 			public const int CoordinatorLayout_Layout_layout_anchor = 1;
@@ -7062,8 +7071,8 @@ namespace Projeto_Mobile
 					2130968642,
 					2130968643};
 			
-			// aapt resource value: 0x7F070377
-			public const int DesignTheme_bottomSheetDialogTheme = 2131166071;
+			// aapt resource value: 0x7F080377
+			public const int DesignTheme_bottomSheetDialogTheme = 2131231607;
 			
 			// aapt resource value: 0x1
 			public const int DesignTheme_bottomSheetStyle = 1;
@@ -7078,8 +7087,8 @@ namespace Projeto_Mobile
 					2130968931,
 					2130969011};
 			
-			// aapt resource value: 0x7F070380
-			public const int DrawerArrowToggle_arrowHeadLength = 2131166080;
+			// aapt resource value: 0x7F080380
+			public const int DrawerArrowToggle_arrowHeadLength = 2131231616;
 			
 			// aapt resource value: 0x1
 			public const int DrawerArrowToggle_arrowShaftLength = 1;
@@ -7117,8 +7126,8 @@ namespace Projeto_Mobile
 					2130968922,
 					2130969041};
 			
-			// aapt resource value: 0x7F070389
-			public const int FloatingActionButton_backgroundTint = 2131166089;
+			// aapt resource value: 0x7F080389
+			public const int FloatingActionButton_backgroundTint = 2131231625;
 			
 			// aapt resource value: 0x1
 			public const int FloatingActionButton_backgroundTintMode = 1;
@@ -7126,8 +7135,8 @@ namespace Projeto_Mobile
 			public static int[] FloatingActionButton_Behavior_Layout = new int[] {
 					2130968632};
 			
-			// aapt resource value: 0x7F070403
-			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 2131166211;
+			// aapt resource value: 0x7F080403
+			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 2131231747;
 			
 			// aapt resource value: 0x2
 			public const int FloatingActionButton_borderWidth = 2;
@@ -7166,8 +7175,8 @@ namespace Projeto_Mobile
 					2130968834,
 					2130968856};
 			
-			// aapt resource value: 0x7F070405
-			public const int FlowLayout_itemSpacing = 2131166213;
+			// aapt resource value: 0x7F080405
+			public const int FlowLayout_itemSpacing = 2131231749;
 			
 			// aapt resource value: 0x1
 			public const int FlowLayout_lineSpacing = 1;
@@ -7192,8 +7201,8 @@ namespace Projeto_Mobile
 					2130968587,
 					2130968588};
 			
-			// aapt resource value: 0x7F070014
-			public const int FontFamilyFont_android_font = 2131165204;
+			// aapt resource value: 0x7F080014
+			public const int FontFamilyFont_android_font = 2131230740;
 			
 			// aapt resource value: 0x1
 			public const int FontFamilyFont_android_fontStyle = 1;
@@ -7222,8 +7231,8 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x9
 			public const int FontFamilyFont_ttcIndex = 9;
 			
-			// aapt resource value: 0x7F070007
-			public const int FontFamily_fontProviderAuthority = 2131165191;
+			// aapt resource value: 0x7F080007
+			public const int FontFamily_fontProviderAuthority = 2131230727;
 			
 			// aapt resource value: 0x1
 			public const int FontFamily_fontProviderCerts = 1;
@@ -7245,8 +7254,8 @@ namespace Projeto_Mobile
 					16843264,
 					2130968796};
 			
-			// aapt resource value: 0x7F070408
-			public const int ForegroundLinearLayout_android_foreground = 2131166216;
+			// aapt resource value: 0x7F080408
+			public const int ForegroundLinearLayout_android_foreground = 2131231752;
 			
 			// aapt resource value: 0x1
 			public const int ForegroundLinearLayout_android_foregroundGravity = 1;
@@ -7272,14 +7281,14 @@ namespace Projeto_Mobile
 					16843173,
 					16844052};
 			
-			// aapt resource value: 0x7F070038
-			public const int GradientColorItem_android_color = 2131165240;
+			// aapt resource value: 0x7F080038
+			public const int GradientColorItem_android_color = 2131230776;
 			
 			// aapt resource value: 0x1
 			public const int GradientColorItem_android_offset = 1;
 			
-			// aapt resource value: 0x7F070025
-			public const int GradientColor_android_centerColor = 2131165221;
+			// aapt resource value: 0x7F080025
+			public const int GradientColor_android_centerColor = 2131230757;
 			
 			// aapt resource value: 0x1
 			public const int GradientColor_android_centerX = 1;
@@ -7325,8 +7334,8 @@ namespace Projeto_Mobile
 					2130968875,
 					2130968921};
 			
-			// aapt resource value: 0x7F070412
-			public const int LinearLayoutCompat_android_baselineAligned = 2131166226;
+			// aapt resource value: 0x7F080412
+			public const int LinearLayoutCompat_android_baselineAligned = 2131231762;
 			
 			// aapt resource value: 0x1
 			public const int LinearLayoutCompat_android_baselineAlignedChildIndex = 1;
@@ -7352,8 +7361,8 @@ namespace Projeto_Mobile
 					16843137,
 					16842996};
 			
-			// aapt resource value: 0x7F070422
-			public const int LinearLayoutCompat_Layout_android_layout_gravity = 2131166242;
+			// aapt resource value: 0x7F080422
+			public const int LinearLayoutCompat_Layout_android_layout_gravity = 2131231778;
 			
 			// aapt resource value: 0x1
 			public const int LinearLayoutCompat_Layout_android_layout_height = 1;
@@ -7374,8 +7383,8 @@ namespace Projeto_Mobile
 					16843436,
 					16843437};
 			
-			// aapt resource value: 0x7F070427
-			public const int ListPopupWindow_android_dropDownHorizontalOffset = 2131166247;
+			// aapt resource value: 0x7F080427
+			public const int ListPopupWindow_android_dropDownHorizontalOffset = 2131231783;
 			
 			// aapt resource value: 0x1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
@@ -7398,8 +7407,8 @@ namespace Projeto_Mobile
 					2130968944,
 					2130968945};
 			
-			// aapt resource value: 0x7F070430
-			public const int MaterialButton_android_insetBottom = 2131166256;
+			// aapt resource value: 0x7F080430
+			public const int MaterialButton_android_insetBottom = 2131231792;
 			
 			// aapt resource value: 0x1
 			public const int MaterialButton_android_insetLeft = 1;
@@ -7450,8 +7459,8 @@ namespace Projeto_Mobile
 					2130968944,
 					2130968945};
 			
-			// aapt resource value: 0x7F070447
-			public const int MaterialCardView_strokeColor = 2131166279;
+			// aapt resource value: 0x7F080447
+			public const int MaterialCardView_strokeColor = 2131231815;
 			
 			// aapt resource value: 0x1
 			public const int MaterialCardView_strokeWidth = 1;
@@ -7490,8 +7499,8 @@ namespace Projeto_Mobile
 					2130969004,
 					2130969008};
 			
-			// aapt resource value: 0x7F070450
-			public const int MaterialComponentsTheme_bottomSheetDialogTheme = 2131166288;
+			// aapt resource value: 0x7F080450
+			public const int MaterialComponentsTheme_bottomSheetDialogTheme = 2131231824;
 			
 			// aapt resource value: 0x1
 			public const int MaterialComponentsTheme_bottomSheetStyle = 1;
@@ -7594,8 +7603,8 @@ namespace Projeto_Mobile
 					16843231,
 					16843156};
 			
-			// aapt resource value: 0x7F070483
-			public const int MenuGroup_android_checkableBehavior = 2131166339;
+			// aapt resource value: 0x7F080483
+			public const int MenuGroup_android_checkableBehavior = 2131231875;
 			
 			// aapt resource value: 0x1
 			public const int MenuGroup_android_enabled = 1;
@@ -7637,8 +7646,8 @@ namespace Projeto_Mobile
 					2130968920,
 					2130969036};
 			
-			// aapt resource value: 0x7F070490
-			public const int MenuItem_actionLayout = 2131166352;
+			// aapt resource value: 0x7F080490
+			public const int MenuItem_actionLayout = 2131231888;
 			
 			// aapt resource value: 0x1
 			public const int MenuItem_actionProviderClass = 1;
@@ -7717,8 +7726,8 @@ namespace Projeto_Mobile
 					2130968899,
 					2130968946};
 			
-			// aapt resource value: 0x7F070514
-			public const int MenuView_android_headerBackground = 2131166484;
+			// aapt resource value: 0x7F080514
+			public const int MenuView_android_headerBackground = 2131232020;
 			
 			// aapt resource value: 0x1
 			public const int MenuView_android_horizontalDivider = 1;
@@ -7758,8 +7767,8 @@ namespace Projeto_Mobile
 					2130968838,
 					2130968876};
 			
-			// aapt resource value: 0x7F070524
-			public const int NavigationView_android_background = 2131166500;
+			// aapt resource value: 0x7F080524
+			public const int NavigationView_android_background = 2131232036;
 			
 			// aapt resource value: 0x1
 			public const int NavigationView_android_fitsSystemWindows = 1;
@@ -7802,11 +7811,11 @@ namespace Projeto_Mobile
 			public static int[] PopupWindowBackgroundState = new int[] {
 					2130968937};
 			
-			// aapt resource value: 0x7F070541
-			public const int PopupWindowBackgroundState_state_above_anchor = 2131166529;
+			// aapt resource value: 0x7F080541
+			public const int PopupWindowBackgroundState_state_above_anchor = 2131232065;
 			
-			// aapt resource value: 0x7F070537
-			public const int PopupWindow_android_popupAnimationStyle = 2131166519;
+			// aapt resource value: 0x7F080537
+			public const int PopupWindow_android_popupAnimationStyle = 2131232055;
 			
 			// aapt resource value: 0x1
 			public const int PopupWindow_android_popupBackground = 1;
@@ -7818,8 +7827,8 @@ namespace Projeto_Mobile
 					2130968884,
 					2130968887};
 			
-			// aapt resource value: 0x7F070543
-			public const int RecycleListView_paddingBottomNoButtons = 2131166531;
+			// aapt resource value: 0x7F080543
+			public const int RecycleListView_paddingBottomNoButtons = 2131232067;
 			
 			// aapt resource value: 0x1
 			public const int RecycleListView_paddingTopNoTitle = 1;
@@ -7837,8 +7846,8 @@ namespace Projeto_Mobile
 					2130968930,
 					2130968936};
 			
-			// aapt resource value: 0x7F070546
-			public const int RecyclerView_android_descendantFocusability = 2131166534;
+			// aapt resource value: 0x7F080546
+			public const int RecyclerView_android_descendantFocusability = 2131232070;
 			
 			// aapt resource value: 0x1
 			public const int RecyclerView_android_orientation = 1;
@@ -7873,14 +7882,14 @@ namespace Projeto_Mobile
 			public static int[] ScrimInsetsFrameLayout = new int[] {
 					2130968825};
 			
-			// aapt resource value: 0x7F070558
-			public const int ScrimInsetsFrameLayout_insetForeground = 2131166552;
+			// aapt resource value: 0x7F080558
+			public const int ScrimInsetsFrameLayout_insetForeground = 2131232088;
 			
 			public static int[] ScrollingViewBehavior_Layout = new int[] {
 					2130968635};
 			
-			// aapt resource value: 0x7F070560
-			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 2131166560;
+			// aapt resource value: 0x7F080560
+			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 2131232096;
 			
 			public static int[] SearchView = new int[] {
 					16842970,
@@ -7901,8 +7910,8 @@ namespace Projeto_Mobile
 					2130968952,
 					2130969043};
 			
-			// aapt resource value: 0x7F070562
-			public const int SearchView_android_focusable = 2131166562;
+			// aapt resource value: 0x7F080562
+			public const int SearchView_android_focusable = 2131232098;
 			
 			// aapt resource value: 0x1
 			public const int SearchView_android_imeOptions = 1;
@@ -7961,8 +7970,8 @@ namespace Projeto_Mobile
 					2130968758,
 					2130968872};
 			
-			// aapt resource value: 0x7F070583
-			public const int SnackbarLayout_android_maxWidth = 2131166595;
+			// aapt resource value: 0x7F080583
+			public const int SnackbarLayout_android_maxWidth = 2131232131;
 			
 			// aapt resource value: 0x1
 			public const int SnackbarLayout_elevation = 1;
@@ -7970,8 +7979,8 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x2
 			public const int SnackbarLayout_maxActionInlineWidth = 2;
 			
-			// aapt resource value: 0x7F070580
-			public const int Snackbar_snackbarButtonStyle = 2131166592;
+			// aapt resource value: 0x7F080580
+			public const int Snackbar_snackbarButtonStyle = 2131232128;
 			
 			// aapt resource value: 0x1
 			public const int Snackbar_snackbarStyle = 1;
@@ -7983,8 +7992,8 @@ namespace Projeto_Mobile
 					16843131,
 					2130968897};
 			
-			// aapt resource value: 0x7F070587
-			public const int Spinner_android_dropDownWidth = 2131166599;
+			// aapt resource value: 0x7F080587
+			public const int Spinner_android_dropDownWidth = 2131232135;
 			
 			// aapt resource value: 0x1
 			public const int Spinner_android_entries = 1;
@@ -8009,11 +8018,11 @@ namespace Projeto_Mobile
 			public static int[] StateListDrawableItem = new int[] {
 					16843161};
 			
-			// aapt resource value: 0x7F070752
-			public const int StateListDrawableItem_android_drawable = 2131167058;
+			// aapt resource value: 0x7F080752
+			public const int StateListDrawableItem_android_drawable = 2131232594;
 			
-			// aapt resource value: 0x7F070745
-			public const int StateListDrawable_android_constantSize = 2131167045;
+			// aapt resource value: 0x7F080745
+			public const int StateListDrawable_android_constantSize = 2131232581;
 			
 			// aapt resource value: 0x1
 			public const int StateListDrawable_android_dither = 1;
@@ -8046,8 +8055,8 @@ namespace Projeto_Mobile
 					2130969038,
 					2130969039};
 			
-			// aapt resource value: 0x7F070593
-			public const int SwitchCompat_android_textOff = 2131166611;
+			// aapt resource value: 0x7F080593
+			public const int SwitchCompat_android_textOff = 2131232147;
 			
 			// aapt resource value: 0x1
 			public const int SwitchCompat_android_textOn = 1;
@@ -8093,8 +8102,8 @@ namespace Projeto_Mobile
 					16842994,
 					16843087};
 			
-			// aapt resource value: 0x7F070608
-			public const int TabItem_android_icon = 2131166728;
+			// aapt resource value: 0x7F080608
+			public const int TabItem_android_icon = 2131232264;
 			
 			// aapt resource value: 0x1
 			public const int TabItem_android_layout = 1;
@@ -8129,8 +8138,8 @@ namespace Projeto_Mobile
 					2130968981,
 					2130968982};
 			
-			// aapt resource value: 0x7F070612
-			public const int TabLayout_tabBackground = 2131166738;
+			// aapt resource value: 0x7F080612
+			public const int TabLayout_tabBackground = 2131232274;
 			
 			// aapt resource value: 0x1
 			public const int TabLayout_tabContentStart = 1;
@@ -8219,8 +8228,8 @@ namespace Projeto_Mobile
 					2130968786,
 					2130968983};
 			
-			// aapt resource value: 0x7F070638
-			public const int TextAppearance_android_fontFamily = 2131166776;
+			// aapt resource value: 0x7F080638
+			public const int TextAppearance_android_fontFamily = 2131232312;
 			
 			// aapt resource value: 0x1
 			public const int TextAppearance_android_shadowColor = 1;
@@ -8288,8 +8297,8 @@ namespace Projeto_Mobile
 					2130968894,
 					2130968895};
 			
-			// aapt resource value: 0x7F070652
-			public const int TextInputLayout_android_hint = 2131166802;
+			// aapt resource value: 0x7F080652
+			public const int TextInputLayout_android_hint = 2131232338;
 			
 			// aapt resource value: 0x1
 			public const int TextInputLayout_android_textColorHint = 1;
@@ -8377,8 +8386,8 @@ namespace Projeto_Mobile
 					2130968759,
 					2130968760};
 			
-			// aapt resource value: 0x7F070681
-			public const int ThemeEnforcement_android_textAppearance = 2131166849;
+			// aapt resource value: 0x7F080681
+			public const int ThemeEnforcement_android_textAppearance = 2131232385;
 			
 			// aapt resource value: 0x1
 			public const int ThemeEnforcement_enforceMaterialTheme = 1;
@@ -8417,8 +8426,8 @@ namespace Projeto_Mobile
 					2130969028,
 					2130969029};
 			
-			// aapt resource value: 0x7F070685
-			public const int Toolbar_android_gravity = 2131166853;
+			// aapt resource value: 0x7F080685
+			public const int Toolbar_android_gravity = 2131232389;
 			
 			// aapt resource value: 0x1
 			public const int Toolbar_android_minHeight = 1;
@@ -8516,8 +8525,8 @@ namespace Projeto_Mobile
 					2130968629,
 					2130968630};
 			
-			// aapt resource value: 0x7F070721
-			public const int ViewBackgroundHelper_android_background = 2131167009;
+			// aapt resource value: 0x7F080721
+			public const int ViewBackgroundHelper_android_background = 2131232545;
 			
 			// aapt resource value: 0x1
 			public const int ViewBackgroundHelper_backgroundTint = 1;
@@ -8530,8 +8539,8 @@ namespace Projeto_Mobile
 					16842995,
 					16842994};
 			
-			// aapt resource value: 0x7F070725
-			public const int ViewStubCompat_android_id = 2131167013;
+			// aapt resource value: 0x7F080725
+			public const int ViewStubCompat_android_id = 2131232549;
 			
 			// aapt resource value: 0x1
 			public const int ViewStubCompat_android_inflatedId = 1;
@@ -8539,8 +8548,8 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x2
 			public const int ViewStubCompat_android_layout = 2;
 			
-			// aapt resource value: 0x7F070715
-			public const int View_android_focusable = 2131166997;
+			// aapt resource value: 0x7F080715
+			public const int View_android_focusable = 2131232533;
 			
 			// aapt resource value: 0x1
 			public const int View_android_theme = 1;
@@ -8567,8 +8576,8 @@ namespace Projeto_Mobile
 		public partial class Xml
 		{
 			
-			// aapt resource value: 0x7F080002
-			public const int xamarin_essentials_fileprovider_file_paths = 2131230722;
+			// aapt resource value: 0x7F090002
+			public const int xamarin_essentials_fileprovider_file_paths = 2131296258;
 			
 			static Xml()
 			{
