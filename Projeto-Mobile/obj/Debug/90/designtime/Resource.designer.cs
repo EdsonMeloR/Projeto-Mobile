@@ -3138,7 +3138,10 @@ namespace Projeto_Mobile
 			public const int design_snackbar_background = 2131296348;
 			
 			// aapt resource value: 0x7F010002
-			public const int icone = 2130771970;
+			public const int icon = 2130771970;
+			
+			// aapt resource value: 0x7F010003
+			public const int icone = 2130771971;
 			
 			// aapt resource value: 0x7F09005D
 			public const int ic_mtrl_chip_checked_black = 2131296349;
@@ -3285,9 +3288,6 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F0C0007
 			public const int blocking = 2131492871;
 			
-			// aapt resource value: 0x7F020006
-			public const int botao_logar = 2130837510;
-			
 			// aapt resource value: 0x7F0C0008
 			public const int bottom = 2131492872;
 			
@@ -3305,6 +3305,21 @@ namespace Projeto_Mobile
 			
 			// aapt resource value: 0x7F0C000D
 			public const int browser_actions_menu_view = 2131492877;
+			
+			// aapt resource value: 0x7F020019
+			public const int btn_entregas_menu = 2130837529;
+			
+			// aapt resource value: 0x7F020016
+			public const int btn_login_entrar = 2130837526;
+			
+			// aapt resource value: 0x7F020011
+			public const int btn_motor_voltar = 2130837521;
+			
+			// aapt resource value: 0x7F020017
+			public const int btn_perfil_pessoal = 2130837527;
+			
+			// aapt resource value: 0x7F020018
+			public const int btn_relatorio_menu = 2130837528;
 			
 			// aapt resource value: 0x7F0C001A
 			public const int buttonPanel = 2131492890;
@@ -3360,11 +3375,11 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F0C002B
 			public const int edit_query = 2131492907;
 			
-			// aapt resource value: 0x7F020005
-			public const int edt_login_main = 2130837509;
+			// aapt resource value: 0x7F020014
+			public const int edt_login_main = 2130837524;
 			
-			// aapt resource value: 0x7F020004
-			public const int edt_senha_main = 2130837508;
+			// aapt resource value: 0x7F020015
+			public const int edt_senha_main = 2130837525;
 			
 			// aapt resource value: 0x7F0C000A
 			public const int end = 2131492874;
@@ -3387,6 +3402,9 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F0C0009
 			public const int forever = 2131492873;
 			
+			// aapt resource value: 0x7F020002
+			public const int FotoPerfilPessoal = 2130837506;
+			
 			// aapt resource value: 0x7F0C0033
 			public const int ghost_view = 2131492915;
 			
@@ -3405,8 +3423,8 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
-			// aapt resource value: 0x7F020003
-			public const int imageView1 = 2130837507;
+			// aapt resource value: 0x7F020013
+			public const int imageView1 = 2130837523;
 			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
@@ -3639,8 +3657,8 @@ namespace Projeto_Mobile
 			// aapt resource value: 0x7F0C0082
 			public const int textSpacerNoTitle = 2131492994;
 			
-			// aapt resource value: 0x7F020002
-			public const int textView1 = 2130837506;
+			// aapt resource value: 0x7F020012
+			public const int textView1 = 2130837522;
 			
 			// aapt resource value: 0x7F0C0083
 			public const int text_input_password_toggle = 2131492995;
@@ -3680,6 +3698,30 @@ namespace Projeto_Mobile
 			
 			// aapt resource value: 0x7F0C0092
 			public const int transition_transform = 2131493010;
+			
+			// aapt resource value: 0x7F020009
+			public const int txt_categoria = 2130837513;
+			
+			// aapt resource value: 0x7F020008
+			public const int txt_cnh = 2130837512;
+			
+			// aapt resource value: 0x7F020006
+			public const int txt_cpf = 2130837510;
+			
+			// aapt resource value: 0x7F020005
+			public const int txt_dataNasc = 2130837509;
+			
+			// aapt resource value: 0x7F020004
+			public const int txt_nome = 2130837508;
+			
+			// aapt resource value: 0x7F020003
+			public const int txt_perfilpessoal = 2130837507;
+			
+			// aapt resource value: 0x7F020007
+			public const int txt_rg = 2130837511;
+			
+			// aapt resource value: 0x7F020010
+			public const int txt_validadeCnh = 2130837520;
 			
 			// aapt resource value: 0x7F0C0093
 			public const int uniform = 2131493011;
@@ -3886,7 +3928,7 @@ namespace Projeto_Mobile
 			public const int activity_detentrega = 2130903043;
 			
 			// aapt resource value: 0x7F030004
-			public const int activity_entrega = 2130903044;
+			public const int activity_entregas = 2130903044;
 			
 			// aapt resource value: 0x7F030005
 			public const int activity_login = 2130903045;

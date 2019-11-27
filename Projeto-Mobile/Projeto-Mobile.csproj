@@ -73,16 +73,17 @@
     <Compile Include="Class\NotaTransporte.cs" />
     <Compile Include="Class\Pedido.cs" />
     <Compile Include="Class\PedidosEndereco.cs" />
+    <Compile Include="Class\SessaoUsuario.cs" />
     <Compile Include="Class\TipoCarga.cs" />
     <Compile Include="Class\TipoEndereco.cs" />
     <Compile Include="Class\TipoFrete.cs" />
     <Compile Include="Class\Usuario.cs" />
     <Compile Include="Class\Veiculo.cs" />
     <Compile Include="Entrega.cs" />
-    <Compile Include="Entregas.cs" />
+    <Compile Include="Relatorio.cs" />
     <Compile Include="Motorista.cs" />
-    <Compile Include="Principal.cs" />
     <Compile Include="Login.cs" />
+    <Compile Include="Principal.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -96,6 +97,7 @@
     <AndroidResource Include="Resources\layout\activity_detentrega.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\drawable\icon.png" />
     <Content Include="Resources\layout\activity_main.axml">
       <SubType>Designer</SubType>
     </Content>
@@ -151,7 +153,7 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\activity_entrega.axml">
+    <AndroidResource Include="Resources\layout\activity_entregas.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

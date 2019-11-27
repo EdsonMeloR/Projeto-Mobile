@@ -281,60 +281,6 @@ namespace Projeto_Mobile.Class
             }
             return builder.ToString();
         }
-        public bool RecuperarSenha(string CPF)
-        {
-            IdNivel = new Niveis();
-            db = new Banco();
-            try
-            {
-                var comm = db.AbrirConexao();
-                comm.CommandText = "select * from usuario where Cpf = '" + CPF + "'";
-                var dr = comm.ExecuteReader();
-                while (dr.Read())
-                {
-                    this.Id = dr.GetInt32(0);
-                    this.Nome = dr.GetString(1);
-                    this.Cpf = dr.GetString(2);
-                    this.Telefone = dr.GetString(3);
-                    this.Senha = dr.GetString(4);
-                    this.Email = dr.GetString(5);
-                    this.IdNivel.IdNivel = dr.GetInt32(6);
-                }
-                //cria uma mensagem
-                MailMessage mail = new MailMessage();
-
-                //define os endereços
-                mail.From = new MailAddress("prosperitylogistica@gmail.com");
-                mail.To.Add(this.Email.ToString());
-                mail.Priority = MailPriority.Normal;
-                mail.IsBodyHtml = true;
-
-                //define o conteúdo
-                var senhaRecuperada = GerarSenhaMd5(DateTime.Now.ToString());
-                mail.Subject = "Esté é um email de recuperação de senha da prosperity";
-                mail.Body = "Utilize esta senha : " + senhaRecuperada;
-                mail.SubjectEncoding = Encoding.GetEncoding("ISO-8859-1");
-                mail.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
-
-                //envia a mensagem
-                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-                smtp.EnableSsl = true;
-                smtp.Port = 587;
-                smtp.Credentials = new  NetworkCredential("prosperitylogistica@gmail.com", "prospe123");
-                smtp.Send(mail);
-
-                //Redefine a senha
-                comm.Connection.Close();
-                comm.Connection.Open();
-                comm.CommandText = "update usuario set Senha = '" + GerarSenhaMd5(senhaRecuperada) + "', PrimeiroLogin = 1 where idUsuario = " + this.Id;
-                comm.ExecuteNonQuery();
-                return true;
-            }
-            catch (Exception e)
-            {
-                e.Message.ToString();
-                return false;
-            }
-        }
+       
     }
 }

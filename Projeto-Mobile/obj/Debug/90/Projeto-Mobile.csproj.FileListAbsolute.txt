@@ -34,11 +34,14 @@ C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90
 C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\R.cs.flag
 C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\R.txt
 C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\uploadflags.txt
-C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res\layout\login.xml
-C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res\layout\inicio.xml
-C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res\layout\relatorio.xml
-C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res\layout\colaborador.xml
-C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res\layout\entrega.xml
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res\drawable\icone.png
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res\layout\activity_detentrega.xml
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res\layout\activity_login.xml
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res\layout\activity_principal.xml
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res\layout\activity_relatorio.xml
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res\layout\activity_colaborador.xml
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res\layout\activity_entregas.xml
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\Projeto-Mobile.csprojAssemblyReference.cache
 C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\bin\Debug\Mono.Android.pdb
 C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\bin\Debug\mscorlib.pdb
 C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\bin\Debug\System.Core.pdb
@@ -83,6 +86,5 @@ C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90
 C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\android\assets\System.ServiceModel.Internals.pdb
 C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\android\assets\System.Transactions.pdb
 C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\android\assets\System.Xml.pdb
-C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\Projeto-Mobile.csprojAssemblyReference.cache
-C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res\drawable\icone.png
+C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\res\drawable\icon.png
 C:\Users\leonardo.olima2\source\repos\projeto-mobile\Projeto-Mobile\obj\Debug\90\linksrc\Xamarin.Essentials.dll.mdb

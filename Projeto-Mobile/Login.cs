@@ -7,20 +7,22 @@ using Android.Widget;
 namespace Projeto_Mobile
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
-    public class Login : AppCompatActivity
+    public class Login : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.login);
-        }
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            SetContentView(Resource.Layout.activity_login);
 
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            Button btnEntrar = (Button)FindViewById(Resource.Id.btn_login_entrar);
+
+            btnEntrar.Click += delegate
+            {
+                StartActivity(typeof(Principal));
+            };
         }
+
+
     }
 }
