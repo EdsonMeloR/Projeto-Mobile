@@ -34,6 +34,8 @@ namespace Projeto_Mobile
             SignaturePadView assinatura = (SignaturePadView)FindViewById(Resource.Id.assinatura_entrega);
             Button btnNovaEntrega = (Button)FindViewById(Resource.Id.btn_gerarentrega_entrega);
             Button btnSair = (Button)FindViewById(Resource.Id.btn_saur_entrega);
+            assinatura.SetBackgroundColor(Color.White);
+            assinatura.StrokeColor = Color.Black;
             btnSair.Click += delegate
             {
                 StartActivity(typeof(Principal));
@@ -49,7 +51,7 @@ namespace Projeto_Mobile
                         throw new Exception("Preencha o campo Status");
                     e = new Class.Entrega();
                     var assBitMap = assinatura.GetImage();
-                    var imagem = this.ImageToByteArray(assBitMap);
+                    var imagem = ImageToByteArray(assBitMap);
                     e.InserirEntrega(imagem, edtRg.Text, edtStatus.Text, 32);
                     if (e.Id > 0)
                         Toast.MakeText(this, "Inserido com sucesso !!", ToastLength.Long).Show();
@@ -76,7 +78,7 @@ namespace Projeto_Mobile
 
             using (var stream = new MemoryStream())
             {                
-                image.Compress(CompressFormat.Jpeg, 100, stream);
+                image.Compress(CompressFormat.Png, 100, stream);
                 result = stream.ToArray();
                 stream.Flush();
             }

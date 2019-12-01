@@ -65,7 +65,7 @@
     <Xamarin.Controls.SignaturePadView
         android:layout_width="361.0dp"
         android:layout_height="170.3dp"
-        android:id="@+id/assinatura_entrega"
+        android:id="@+id/assinatura_entrega"        
     />
     <Button
         android:text="Nova Entrega"

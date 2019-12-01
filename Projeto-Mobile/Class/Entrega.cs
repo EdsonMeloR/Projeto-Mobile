@@ -53,7 +53,7 @@ namespace Projeto_Mobile.Class
                 var comm = db.AbrirConexao();
                 comm.CommandType = System.Data.CommandType.StoredProcedure;
                 comm.CommandText = "insert_entrega";
-                comm.Parameters.Add("_assinatura", MySqlDbType.Blob).Value = _assinatura;
+                comm.Parameters.Add("_assinatura", MySqlDbType.LongBlob).Value = _assinatura;
                 comm.Parameters.Add("_rg", MySqlDbType.VarChar).Value = _rg;
                 comm.Parameters.Add("_status", MySqlDbType.VarChar).Value = _status;
                 comm.Parameters.Add("_idnotatransporte", MySqlDbType.Int32).Value = _idNotaTransporte;
