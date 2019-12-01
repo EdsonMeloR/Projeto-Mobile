@@ -77,6 +77,7 @@ namespace Projeto_Mobile
                         Sm.Cpf = m.Cpf;
                         Sm.Nome = m.Nome;
                         Sm.Sessao = true;
+                        BancoLocal.AtualizarSessao(Sm);
                         Finish();
                     }
                     else
