@@ -1,0 +1,90 @@
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:minWidth = "25px"
+	android:minHeight = "25px"
+	android:background = "#282c33">
+	<ImageView
+		android:src="@drawable/icone"
+		android:layout_width="match_parent"
+		android:layout_height="145.3dp"
+		android:id="@+id/FotoPerfilPessoal"
+	/>
+	<TextView
+		android:text = "Perfil pessoal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:enabled = "false"
+		android:layout_gravity = "center"
+		android:id="@+id/txt_perfilpessoal" 
+	/>
+	<EditText
+		android:id = "@+id/txt_nome"
+		android:layout_width = "315.0dp"
+		android:layout_height = "wrap_content"
+		android:hint = "Nome Completo"
+		android:inputType = "text"
+		android:layout_marginLeft="10.0dp"
+		android:enabled="false" 
+	/>	
+	<EditText
+		android:id = "@+id/txt_cpf"
+		android:layout_width = "315.0dp"
+		android:layout_height = "wrap_content"
+		android:hint = "CPF"
+		android:inputType = "text"
+		android:layout_marginLeft="10.0dp" 
+		android:enabled="false" 
+	/>
+	<EditText
+		android:id = "@+id/txt_rg"
+		android:layout_width = "315.0dp"
+		android:layout_height = "wrap_content"
+		android:hint = "RG"
+		android:inputType = "text"
+		android:layout_marginLeft="10.0dp" 
+		android:enabled="false"
+	/>
+	<EditText
+		android:id = "@+id/txt_cnh"
+		android:layout_width = "315.0dp"
+		android:layout_height = "wrap_content"
+		android:hint = "CNH"
+		android:inputType = "text"
+		android:layout_marginLeft="10.0dp" 
+		android:enabled="false"
+	/>
+	<EditText
+		android:id = "@+id/txt_categoria"
+		android:layout_width = "315.0dp"
+		android:layout_height = "wrap_content"
+		android:hint = "Categoria"
+		android:inputType = "text"
+		android:layout_marginLeft="10.0dp"
+		android:enabled="false"
+	/>
+	<EditText
+		android:id = "@+id/txt_validadeCnh"
+		android:layout_width = "315.0dp"
+		android:layout_height = "wrap_content"
+		android:hint = "Validade CNH"
+		android:inputType = "datetime"
+		android:layout_marginLeft="10.0dp"
+		android:enabled="false"
+	/>
+	<Button
+		android:text = "Voltar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/btn_motor_voltar"
+		android:layout_gravity = "center"
+	/>	
+
+</LinearLayout>

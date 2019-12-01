@@ -94,7 +94,6 @@ C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\bin\Debug
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\build.props
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\adb.props
-C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\Projeto-Mobile.csprojAssemblyReference.cache
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\_VerifyXamarinAndroidSupportVersions.stamp
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\stamp\_BuildLibraryImportsCache.stamp
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\resourcepaths.cache
@@ -415,3 +414,4 @@ C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\android\assets\Mono.Android.pdb

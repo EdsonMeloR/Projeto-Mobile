@@ -31,17 +31,7 @@
 		android:inputType = "text"
 		android:layout_marginLeft="10.0dp"
 		android:enabled="false" 
-	/>
-	<EditText
-		android:id = "@+id/txt_dataNasc"
-		android:layout_width = "315.0dp"
-		android:layout_height = "wrap_content"
-		android:hint = "Data de nascimento"
-		android:inputType = "text"
-		android:layout_marginLeft="10.0dp" 
-		android:enabled="false" 
-
-	/>
+	/>	
 	<EditText
 		android:id = "@+id/txt_cpf"
 		android:layout_width = "315.0dp"

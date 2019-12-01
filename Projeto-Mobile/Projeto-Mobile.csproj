@@ -99,6 +99,7 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\layout\activity_colaborador.xml" />
     <Content Include="Resources\layout\activity_main.axml">
       <SubType>Designer</SubType>
     </Content>

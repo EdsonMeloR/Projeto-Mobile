@@ -43,4 +43,13 @@
 		android:id="@+id/btn_entregas_menu"
 		android:layout_gravity = "center"
 	/>
+    <Button
+		android:text = "Desconectar-se"
+		android:layout_width="154.5dp"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/btn_desconectar_menu"
+		android:layout_gravity = "center"
+	/>
 </LinearLayout>

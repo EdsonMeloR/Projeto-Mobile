@@ -50,9 +50,10 @@ namespace Projeto_Mobile
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_login);
 
-            Button btnEntrar = (Button)FindViewById(Resource.Id.btn_login_entrar);
+            Button btnEntrar = (Button)FindViewById(Resource.Id.btn_login_entrar);            
             EditText edtCpf = (EditText)FindViewById(Resource.Id.edt_login_main);
             EditText edtSenha = (EditText)FindViewById(Resource.Id.edt_senha_main);
+
             btnEntrar.Click += delegate
             {
                 try
@@ -72,7 +73,7 @@ namespace Projeto_Mobile
                         StartActivity(typeof(Principal));
                         Toast.MakeText(this, "Bem vindo "+m.Nome, ToastLength.Long).Show();
                         Sm = new SessaoMotorista();
-                        Sm.Id = m.IdMotorista;
+                        Sm.Id = 1;
                         Sm.IdMotorista = m.IdMotorista;
                         Sm.Cpf = m.Cpf;
                         Sm.Nome = m.Nome;
@@ -89,9 +90,7 @@ namespace Projeto_Mobile
                 {
                     Toast.MakeText(this,ex.Message.ToString(), ToastLength.Long).Show();
                 }                
-            };
+            };            
         }
-
-
     }
 }
