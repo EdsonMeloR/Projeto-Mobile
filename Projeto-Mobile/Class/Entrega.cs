@@ -45,7 +45,7 @@ namespace Projeto_Mobile.Class
         /// <summary>
         /// Inserindo uma nova entrega
         /// </summary>       
-        public void InserirEntrega(byte[] _assinatura, string _rg, DateTime _data, string _status, int _idNotaTransporte)
+        public void InserirEntrega(byte[] _assinatura, string _rg, string _status, int _idNotaTransporte)
         {
             db = new Banco();
             try
@@ -55,7 +55,6 @@ namespace Projeto_Mobile.Class
                 comm.CommandText = "insert_entrega";
                 comm.Parameters.Add("_assinatura", MySqlDbType.Blob).Value = _assinatura;
                 comm.Parameters.Add("_rg", MySqlDbType.VarChar).Value = _rg;
-                comm.Parameters.Add("_data", MySqlDbType.DateTime).Value = _data;
                 comm.Parameters.Add("_status", MySqlDbType.VarChar).Value = _status;
                 comm.Parameters.Add("_idnotatransporte", MySqlDbType.Int32).Value = _idNotaTransporte;
                 var dr = comm.ExecuteReader();

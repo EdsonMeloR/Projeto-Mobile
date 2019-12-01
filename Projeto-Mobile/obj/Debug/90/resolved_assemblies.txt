@@ -3,6 +3,7 @@ C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\android\assets\Mono.Android.dll
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\android\assets\mscorlib.dll
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\android\assets\MySql.Data.CF.dll
+C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\android\assets\SignaturePad.dll
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\android\assets\SQLite-net.dll
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\android\assets\SQLitePCLRaw.batteries_green.dll
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\android\assets\SQLitePCLRaw.batteries_v2.dll

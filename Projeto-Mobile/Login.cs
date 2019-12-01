@@ -28,24 +28,31 @@ namespace Projeto_Mobile
         }
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            var a = BancoLocal.ObterListaSessao();
-            if (a.Result.Count == 1)
+            try
             {
-                foreach (var user in a.Result)
+                var a = BancoLocal.ObterListaSessao();
+                if (a.Result.Count == 1)
                 {
-                    if (user.Sessao)
-                    {                        
-                        StartActivity(typeof(Principal));
-                        Toast.MakeText(this, "Bem vindo " + user.Nome, ToastLength.Long).Show();
-                        Finish();
-                    }                    
+                    foreach (var user in a.Result)
+                    {
+                        if (user.Sessao)
+                        {
+                            StartActivity(typeof(Principal));
+                            Toast.MakeText(this, "Bem vindo " + user.Nome, ToastLength.Long).Show();
+                            Finish();
+                        }
+                    }
+                }
+                else
+                {
+                    Sm = new SessaoMotorista { Sessao = false };
+                    BancoLocal.InserirSessao(Sm);
                 }
             }
-            else
+            catch(Exception ex)
             {
-                Sm = new SessaoMotorista { Sessao = false };
-                BancoLocal.InserirSessao(Sm);
-            }
+                Toast.MakeText(this, ex.Message.ToString(), ToastLength.Long).Show();
+            }            
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_login);
