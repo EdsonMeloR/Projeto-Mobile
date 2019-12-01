@@ -25,21 +25,30 @@ namespace Projeto_Mobile
             {
                 try
                 {
+                    if (edtCpf.Text == string.Empty)
+                    {
+                        throw new Exception("É necessário colocar o cpf");
+                    }                        
+                    if (edtSenha.Text == string.Empty)
+                    {
+                        throw new Exception("É necessário colocar a senha");
+                    }
                     m = new Class.Motorista();
-                    m.EfetuarLogin(edtCpf.Text, edtSenha.Text);
+                    m.EfetuarLogin(edtCpf.Text, edtSenha.Text);                    
                     if(m.IdMotorista > 0 )
                     {
                         StartActivity(typeof(Principal));
-                        Toast.MakeText(this, "Bem vindo "+m.Nome, ToastLength.Long);
+                        Toast.MakeText(this, "Bem vindo "+m.Nome, ToastLength.Long).Show();
+                        Finish();
                     }
                     else
                     {
-                        Toast.MakeText(this, "Senha ou Cpf incorreto, tente novamente", ToastLength.Long);
+                        Toast.MakeText(this, "Senha ou Cpf incorreto, tente novamente", ToastLength.Long).Show();
                     }
                 }
                 catch(Exception ex)
                 {
-                    Toast.MakeText(this,ex.Message.ToString(), ToastLength.Long);
+                    Toast.MakeText(this,ex.Message.ToString(), ToastLength.Long).Show();
                 }                
             };
         }

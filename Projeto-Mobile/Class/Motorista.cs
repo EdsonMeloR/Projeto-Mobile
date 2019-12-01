@@ -250,7 +250,7 @@ namespace Projeto_Mobile.Class
             {
                 db = new Banco();
                 var comm = db.AbrirConexao();
-                comm.CommandText = "select * from where cpf = '" + cpf + "' && senha = '" + GerarSenhaMd5(senha) + "'";
+                comm.CommandText = "select * from motorista where cpf = '" + cpf + "' && senha = '" + GerarSenhaMd5(senha) + "'";
                 var dr = comm.ExecuteReader();
                 while (dr.Read())
                 {

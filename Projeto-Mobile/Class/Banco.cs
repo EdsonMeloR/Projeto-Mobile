@@ -14,21 +14,21 @@ namespace Projeto_Mobile.Class
 {
     public class Banco
     {
-        MySqlConnectionStringBuilder stringBuilder = new MySqlConnectionStringBuilder();
+        MySqlConnectionStringBuilder Builder = new MySqlConnectionStringBuilder();
 
-        public Banco()//Método Construtor
+        public Banco ()
         { }
-        public MySqlCommand AbrirConexao()//Método abre conexão com banco de dados
-        {
-            stringBuilder.Database = "softkleen.com.br";
-            stringBuilder.Server = "softklee_prosperity";
-            stringBuilder.Port = 3306;
-            stringBuilder.UserID = "softklee_prosperity";
-            stringBuilder.Password = "senac@prosp";
+        public MySqlCommand AbrirConexao()
+        {            
+            Builder.Database = "softklee_prosperity";
+            Builder.Server = "softkleen.com.br";
+            Builder.Port = 3306;
+            Builder.UserID = "softklee_prosperity";
+            Builder.Password = "senac@prosp";
             MySqlCommand comm;
             try
             {
-                var cn = new MySqlConnection(stringBuilder.ToString());
+                var cn = new MySqlConnection(Builder.ToString());
                 cn.Open();
                 comm = new MySqlCommand
                 {
