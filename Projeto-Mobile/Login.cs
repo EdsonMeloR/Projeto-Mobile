@@ -5,6 +5,7 @@ using Android.Runtime;
 using Android.Widget;
 using System;
 using Projeto_Mobile.Class;
+using System.IO;
 
 namespace Projeto_Mobile
 {
@@ -12,8 +13,39 @@ namespace Projeto_Mobile
     public class Login : Activity
     {
         Class.Motorista m;
+        static BancoSqLite bancoLocal;
+        static SessaoMotorista Sm;
+        public static BancoSqLite BancoLocal
+        {
+            get
+            {
+                if (bancoLocal == null)
+                {
+                    bancoLocal = new BancoSqLite(Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.LocalApplicationData), "ProjetoSQLite.db"));
+                }
+                return bancoLocal;
+            }
+        }
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            var a = BancoLocal.ObterListaSessao();
+            if (a.Result.Count == 1)
+            {
+                foreach (var user in a.Result)
+                {
+                    if (user.Sessao)
+                    {                        
+                        StartActivity(typeof(Principal));
+                        Toast.MakeText(this, "Bem vindo " + user.Nome, ToastLength.Long).Show();
+                        Finish();
+                    }                    
+                }
+            }
+            else
+            {
+                Sm = new SessaoMotorista { Sessao = false };
+                BancoLocal.InserirSessao(Sm);
+            }
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_login);
@@ -39,6 +71,12 @@ namespace Projeto_Mobile
                     {
                         StartActivity(typeof(Principal));
                         Toast.MakeText(this, "Bem vindo "+m.Nome, ToastLength.Long).Show();
+                        Sm = new SessaoMotorista();
+                        Sm.Id = m.IdMotorista;
+                        Sm.IdMotorista = m.IdMotorista;
+                        Sm.Cpf = m.Cpf;
+                        Sm.Nome = m.Nome;
+                        Sm.Sessao = true;
                         Finish();
                     }
                     else

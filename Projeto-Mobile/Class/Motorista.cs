@@ -240,10 +240,56 @@ namespace Projeto_Mobile.Class
                 else
                     throw new Exception("Falha ao conectar-se com o banco de dados");
             }
-        }
+        }        
         /// <summary>
         /// Efetuando login do Motorista
         /// </summary>
+        /// 
+        public void ConsultarMotoristaCpf(string cpf)
+        {
+            db = new Banco();
+            Motorista m;
+            var comm = db.AbrirConexao();
+            try
+            {
+                comm.CommandText = "select * from motorista where Cpf = " + cpf;
+                var dr = comm.ExecuteReader();
+                while (dr.Read())
+                {
+                    m = new Motorista
+                    {
+                        IdMotorista = dr.GetInt32(0),
+                        Nome = dr.GetString(1),
+                        Cpf = dr.GetString(2),
+                        Rg = dr.GetString(3),
+                        Cnh = dr.GetString(4),
+                        ValidadeCnh = dr.GetDateTime(5),
+                        CategoriaCnh = dr.GetString(6),
+                        Senha = dr.GetString(7),
+                        PrimeiroLogin = dr.GetBoolean(8)
+                    };
+                }
+
+            }
+            catch (Exception e)
+            {
+                e.Message.ToString();
+            }
+            finally
+            {
+                try
+                {
+                    if (comm != null)
+                        comm.Connection.Close();
+                    else
+                        throw new Exception("Falha ao conectar-se com o banco de dados");
+                }                
+                catch(Exception ex)
+                {
+                    ex.Message.ToString();
+                }
+            }
+        }
         public void EfetuarLogin(string cpf, string senha)
         {
             try

@@ -2,6 +2,7 @@ package mono;
 public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "Projeto-Mobile.dll" comes first in this list. */
+		"Projeto-Mobile.dll",
 		"MySql.Data.CF.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_green.dll",
