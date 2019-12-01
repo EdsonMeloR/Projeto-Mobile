@@ -3,7 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>Samsung SM-J600GT</SelectedDevice>
     <DefaultDevice>nexus_5x</DefaultDevice>
-    <AndroidDesignerPreferredTheme>Theme.DeviceDefault</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
     <AndroidDesignerPreferredDevice>Nexus 5</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

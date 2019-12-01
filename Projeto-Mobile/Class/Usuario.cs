@@ -280,7 +280,6 @@ namespace Projeto_Mobile.Class
                 builder.Append(chave[i].ToString("X2"));
             }
             return builder.ToString();
-        }
-       
+        }       
     }
 }
