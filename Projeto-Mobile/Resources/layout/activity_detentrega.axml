@@ -53,6 +53,7 @@
         android:hint="Rg"
         android:textColor = "#fff"
         android:textColorHint = "#fff"
+        android:inputType="number"
     />
     <EditText
         android:inputType="date"

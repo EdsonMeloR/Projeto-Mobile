@@ -231,7 +231,7 @@ namespace Projeto_Mobile.Class
                 NotaTransporte nt;
                 db = new Banco();
                 var comm = db.AbrirConexao();
-                comm.CommandText = "select nts.idNotaTransporte from notatransporte as nts inner join entrega as ent on nts.idNotaTransporte != ent.idNotaTransporte where nts.idMotorista = " + idMotorista;
+                comm.CommandText = "select nts.idNotaTransporte from notatransporte as nts left join entrega as ent on nts.idNotaTransporte = ent.idNotaTransporte where nts.idMotorista =" + idMotorista + " && ent.idNotaTransporte is null";
                 var dr = comm.ExecuteReader();
                 while(dr.Read())
                 {

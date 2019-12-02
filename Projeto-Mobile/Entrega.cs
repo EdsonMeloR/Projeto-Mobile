@@ -94,7 +94,8 @@ namespace Projeto_Mobile
                     e = new Class.Entrega();
                     var assBitMap = assinatura.GetImage();
                     var imagem = ImageToByteArray(assBitMap);
-                    e.InserirEntrega(imagem, edtRg.Text, edtStatus.Text, 32);
+                    var itemSelecionado = Convert.ToInt32(spnEntregas.SelectedItem.ToString());
+                    e.InserirEntrega(imagem, edtRg.Text, edtStatus.Text, itemSelecionado);
                     if (e.Id > 0)
                     {
                         Toast.MakeText(this, "Inserido com sucesso !!", ToastLength.Long).Show();
