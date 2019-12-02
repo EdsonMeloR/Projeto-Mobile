@@ -23,6 +23,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/edt_identrega_entrega"
         android:hint="Id Entrega"
+        android:textColor="#fff"
+        android:enabled = "false"
+        android:textColorHint = "#fff"
+        android:singleLine = "true"
+        android:shadowColor = "#fff"
     />
     <TextView
         android:layout_marginTop="40px"
@@ -39,7 +44,7 @@
         android:layout_width="361.7dp"
         android:layout_height="wrap_content"
         android:id="@+id/spn_entregas"
-        android:layout_marginRight="97.0dp"        
+        android:layout_marginRight="97.0dp"
     />
     <EditText
         android:layout_width="361.3dp"
@@ -47,6 +52,7 @@
         android:id="@+id/edt_rg_entrega"
         android:hint="Rg"
         android:textColor = "#fff"
+        android:textColorHint = "#fff"
     />
     <EditText
         android:inputType="date"
@@ -54,6 +60,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/edt_dataentrega_entrega" 
         android:hint="Data"
+        android:enabled = "false"
+        android:textColorHint = "#fff"
     />
     <EditText
         android:layout_width="361.3dp"
@@ -61,6 +69,7 @@
         android:id="@+id/edt_statusentrega_entrega"
         android:hint="Status"
         android:textColor = "#fff"
+        android:textColorHint = "#fff"
     />
     <Xamarin.Controls.SignaturePadView
         android:layout_width="361.0dp"

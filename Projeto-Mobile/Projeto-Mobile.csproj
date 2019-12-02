@@ -105,6 +105,7 @@
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\icon.png" />
     <AndroidResource Include="Resources\layout\activity_colaborador.xml" />
+    <AndroidResource Include="Resources\layout\activity_detentrega.xml" />
     <Content Include="Resources\layout\activity_main.axml">
       <SubType>Designer</SubType>
     </Content>

@@ -19,31 +19,36 @@ namespace Projeto_Mobile.Class
         private Veiculo idVeiculo;
         private Motorista idMotorista;
         private TipoFrete idTipoFrete;
-        private string observacoes;
         private double valorFrete;
         private double distancia;
+        private DateTime dataEmissao;
         Banco db;
         //Propiedades
         public int Id { get => id; set => id = value; }
         public Veiculo IdVeiculo { get => idVeiculo; set => idVeiculo = value; }
         public Motorista IdMotorista { get => idMotorista; set => idMotorista = value; }
         public TipoFrete IdTipoFrete { get => idTipoFrete; set => idTipoFrete = value; }
-        public string Observacoes { get => observacoes; set => observacoes = value; }
         public double ValorFrete { get => valorFrete; set => valorFrete = value; }
         public double Distancia { get => distancia; set => distancia = value; }
+        public DateTime DataEmissao { get => dataEmissao; set => dataEmissao = value; }
+
         //Métodos construtores
-        public NotaTransporte(int id, Veiculo idVeiculo, Motorista idMotorista, TipoFrete idTipoFrete, string observacoes, double valorFrete, double distancia)
+        public NotaTransporte(int id, Veiculo idVeiculo, Motorista idMotorista, TipoFrete idTipoFrete, double valorFrete, double distancia, DateTime dataEmissao)
         {
             this.id = id;
             this.idVeiculo = idVeiculo;
             this.idMotorista = idMotorista;
             this.idTipoFrete = idTipoFrete;
-            this.observacoes = observacoes;
             this.valorFrete = valorFrete;
             this.distancia = distancia;
+            this.DataEmissao = dataEmissao;
         }
         public NotaTransporte()
-        { }
+        {
+            IdVeiculo = new Veiculo();
+            IdMotorista = new Motorista();
+            IdTipoFrete = new TipoFrete();
+        }
         //Métodos
         /// <summary>
         /// Inserindo nota de transporte
@@ -59,7 +64,6 @@ namespace Projeto_Mobile.Class
                 comm.Parameters.Add("_idmotorista", MySqlDbType.Int32).Value = idMotorista;
                 comm.Parameters.Add("_idveiculo", MySqlDbType.Int32).Value = idVeiculo;
                 comm.Parameters.Add("_idtiposfretes", MySqlDbType.Int32).Value = idTipoFrete;
-                comm.Parameters.Add("_observacoes", MySqlDbType.VarChar).Value = observacoes;
                 comm.Parameters.Add("_valorfrete", MySqlDbType.Decimal).Value = valorFrete;
                 comm.Parameters.Add("_distancia", MySqlDbType.Decimal).Value = distancia;
                 var dr = comm.ExecuteReader();
@@ -69,7 +73,6 @@ namespace Projeto_Mobile.Class
                     this.IdVeiculo.Id = dr.GetInt32(1);
                     this.IdMotorista.IdMotorista = dr.GetInt32(2);
                     this.IdTipoFrete.Id = dr.GetInt32(3);
-                    this.Observacoes = dr.GetString(4);
                     this.ValorFrete = dr.GetDouble(5);
                     this.Distancia = dr.GetDouble(6);
                 }
@@ -93,7 +96,6 @@ namespace Projeto_Mobile.Class
                 comm.Parameters.Add("_idmotorista", MySqlDbType.Int32).Value = idMotorista;
                 comm.Parameters.Add("_idveiculo", MySqlDbType.Int32).Value = idVeiculo;
                 comm.Parameters.Add("_idtipo", MySqlDbType.Int32).Value = idTipoFrete;
-                comm.Parameters.Add("_observacoes", MySqlDbType.VarChar).Value = observacoes;
                 comm.Parameters.Add("_valorfrete", MySqlDbType.Decimal).Value = valorFrete;
                 comm.Parameters.Add("_distancia", MySqlDbType.Decimal).Value = distancia;
                 comm.Parameters.Add("_id", MySqlDbType.Int32).Value = _id;
@@ -123,9 +125,9 @@ namespace Projeto_Mobile.Class
                     this.IdVeiculo.Id = dr.GetInt32(1);
                     this.IdMotorista.IdMotorista = dr.GetInt32(2);
                     this.IdTipoFrete.Id = dr.GetInt32(3);
-                    this.Observacoes = dr.GetString(4);
+                    this.Distancia = dr.GetDouble(4);
                     this.ValorFrete = dr.GetDouble(5);
-                    this.Distancia = dr.GetDouble(6);
+                    this.DataEmissao = dr.GetDateTime(6);
                 }
             }
             catch (Exception e)
@@ -150,9 +152,9 @@ namespace Projeto_Mobile.Class
                     this.IdVeiculo.Id = dr.GetInt32(1);
                     this.IdMotorista.IdMotorista = dr.GetInt32(2);
                     this.IdTipoFrete.Id = dr.GetInt32(3);
-                    this.Observacoes = dr.GetString(4);
+                    this.Distancia = dr.GetDouble(4);
                     this.ValorFrete = dr.GetDouble(5);
-                    this.Distancia = dr.GetDouble(6);
+                    this.DataEmissao = dr.GetDateTime(6);                    
                 }
             }
             catch (Exception e)
@@ -177,9 +179,9 @@ namespace Projeto_Mobile.Class
                     this.IdVeiculo.Id = dr.GetInt32(1);
                     this.IdMotorista.IdMotorista = dr.GetInt32(2);
                     this.IdTipoFrete.Id = dr.GetInt32(3);
-                    this.Observacoes = dr.GetString(4);
+                    this.Distancia = dr.GetDouble(4);
                     this.ValorFrete = dr.GetDouble(5);
-                    this.Distancia = dr.GetDouble(6);
+                    this.DataEmissao = dr.GetDateTime(6);
                 }
             }
             catch (Exception e)
@@ -208,9 +210,9 @@ namespace Projeto_Mobile.Class
                     n.IdVeiculo.Id = dr.GetInt32(1);
                     n.IdMotorista.IdMotorista = dr.GetInt32(2);
                     n.IdTipoFrete.Id = dr.GetInt32(3);
-                    n.Observacoes = dr.GetString(4);
+                    n.Distancia = dr.GetDouble(4);
                     n.ValorFrete = dr.GetDouble(5);
-                    n.Distancia = dr.GetDouble(6);
+                    n.DataEmissao = dr.GetDateTime(6);
                     lista.Add(n);
                 }
                 return lista;
@@ -218,6 +220,30 @@ namespace Projeto_Mobile.Class
             catch (Exception e)
             {
                 e.Message.ToString();
+                return null;
+            }
+        }
+        public List<NotaTransporte> ListandoServicosPendentesMotorista(int idMotorista)
+        {
+            try
+            {
+                List<NotaTransporte> lista = new List<NotaTransporte>();
+                NotaTransporte nt;
+                db = new Banco();
+                var comm = db.AbrirConexao();
+                comm.CommandText = "select nts.idNotaTransporte from notatransporte as nts inner join entrega as ent on nts.idNotaTransporte != ent.idNotaTransporte where nts.idMotorista = " + idMotorista;
+                var dr = comm.ExecuteReader();
+                while(dr.Read())
+                {
+                    nt = new NotaTransporte();
+                    nt.Id = dr.GetInt32(0);
+                    lista.Add(nt);
+                }
+                return lista;
+            }
+            catch(Exception ex)
+            {
+                ex.Message.ToString();
                 return null;
             }
         }

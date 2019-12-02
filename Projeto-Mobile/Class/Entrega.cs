@@ -16,7 +16,7 @@ namespace Projeto_Mobile.Class
     {
         //Atributos
         private int id;
-        private byte[] assinatura;
+        private Byte[] assinatura;
         private string rg;
         private DateTime data;
         private string status;
@@ -40,7 +40,9 @@ namespace Projeto_Mobile.Class
             this.IdNotaTransporte = idNotaTransporte;
         }
         public Entrega()
-        { }
+        {
+            IdNotaTransporte = new NotaTransporte();
+        }
         //Métodos
         /// <summary>
         /// Inserindo uma nova entrega
@@ -162,9 +164,9 @@ namespace Projeto_Mobile.Class
                 comm.CommandText = "select * from entrega ";
                 var dr = comm.ExecuteReader();
                 while (dr.Read())
-                {
+                {                    
                     e.Id = dr.GetInt32(0);
-                    //this.Assinatura = dr.GetByte(1);
+                    e.Assinatura = BitConverter.GetBytes(dr.GetBytes(1, 0, null, 0, int.MaxValue));
                     e.Rg = dr.GetString(2);
                     e.Data = dr.GetDateTime(3);
                     e.Status = dr.GetString(4);

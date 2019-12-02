@@ -296,6 +296,8 @@ namespace Projeto_Mobile.Class
             {
                 db = new Banco();
                 var comm = db.AbrirConexao();
+                if (comm == null)
+                    throw new Exception("Erro de conexão com o banco de dados");
                 comm.CommandText = "select * from motorista where cpf = '" + cpf + "' && senha = '" + GerarSenhaMd5(senha) + "'";
                 var dr = comm.ExecuteReader();
                 while (dr.Read())
