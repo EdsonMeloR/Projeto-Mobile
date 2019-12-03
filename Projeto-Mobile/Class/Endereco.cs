@@ -216,5 +216,51 @@ namespace Projeto_Mobile.Class
                 return false;
             }
         }
+        public void ConsultarEnderecosPedidoEnderecoDestinatario(int idPedido)
+        {
+            db = new Banco();              
+            try
+            {
+                var comm = db.AbrirConexao();
+                comm.CommandText = "select ende.* from endereco as ende inner join pedidosenderecos as pedend on ende.idEndereco = pedend.idEndereco where pedend.idPedidos = " + idPedido + "&& pedend.idTiposEnderecos = 1";
+                var dr = comm.ExecuteReader();
+                while (dr.Read())
+                {
+                    this.Id = dr.GetInt32(0);
+                    this.Logradouro = dr.GetString(1);
+                    this.Cep = dr.GetString(2);
+                    this.Numero = dr.GetInt32(3);
+                    this.Complemento = dr.GetString(4);
+                    this.IdCliente.RazaoSocial = dr.GetString(5);
+                }
+            }
+            catch (Exception e)
+            {
+                e.Message.ToString();
+            }
+        }
+        public void ConsultarEnderecosPedidoEnderecoRementente(int idPedido)
+        {
+            db = new Banco();
+            try
+            {
+                var comm = db.AbrirConexao();
+                comm.CommandText = "select ende.* from endereco as ende inner join pedidosenderecos as pedend on ende.idEndereco = pedend.idEndereco where pedend.idPedidos = " + idPedido + "&& pedend.idTiposEnderecos = 2";
+                var dr = comm.ExecuteReader();
+                while (dr.Read())
+                {
+                    this.Id = dr.GetInt32(0);
+                    this.Logradouro = dr.GetString(1);
+                    this.Cep = dr.GetString(2);
+                    this.Numero = dr.GetInt32(3);
+                    this.Complemento = dr.GetString(4);
+                    this.IdCliente.RazaoSocial = dr.GetString(5);
+                }
+            }
+            catch (Exception e)
+            {
+                e.Message.ToString();
+            }
+        }
     }
 }

@@ -1,21 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:orientation="vertical"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"	
-	android:minWidth = "25px"
-	android:minHeight = "25px"
-	android:background = "#282c33">
+    android:layout_height="match_parent"
+    android:minWidth = "25px"
+    android:minHeight = "25px"
+    android:background = "#282c33">
 
-	<TextView
-		android:text = "Detalhar Entrega"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:minWidth="25px"
-		android:minHeight="25px"
-		android:layout_gravity = "center"
-		android:id="@+id/textView1" 
+    <TextView
+        android:text = "Detalhar Entrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_gravity = "center"
+        android:id="@+id/textView1"
         android:textColor = "#fff"
 	/>
+    <TextView
+        android:text = "Nota Transporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_gravity = "left"
+        android:id="@+id/textView1"
+        android:textColor = "#fff"
+        android:layout_marginTop = "100px"
+	/>
+    <Spinner
+        android:layout_width="361.7dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_notatransportes_entregas"
+        android:layout_marginRight="97.0dp"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:hint = "Endereço Remetente"
+        android:id="@+id/edt_enderecoremetente_entregas"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:hint = "Endereço Destino"
+        android:id="@+id/edt_enderecodestino_entregas"
+    />
+    <TextView
+        android:text = "Cargas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_gravity = "left"
+        android:id="@+id/txv_cargas_entregas"
+        android:textColor = "#fff"
+        android:layout_marginTop = "100px"
+	/>
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="193.7dp"
+        android:id="@+id/lsv_cargas_entregas" 
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal">
+        <Button
+            android:text="Finalizar Entrega"
+            android:layout_width="180.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_finalizarentrege_entregas" 
+       />
 
+        <Button
+            android:text="Sair"
+            android:layout_width="180.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sairentrege_entregas" 
+        />
+    </LinearLayout>
+
+    
 </LinearLayout>

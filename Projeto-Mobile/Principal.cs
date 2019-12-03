@@ -48,7 +48,7 @@ namespace Projeto_Mobile
 
             btnEntrega.Click += delegate
             {
-                StartActivity(typeof(Entrega));
+                StartActivity(typeof(Entregas));
             };
 
             btnPerfil.Click += delegate

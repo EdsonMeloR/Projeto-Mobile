@@ -24,6 +24,8 @@
 		android:layout_gravity = "center"
 		android:id="@+id/textView1"
 		android:paddingVertical="100px"
+        android:textColor="#fff"
+        android:textSize="70px"
 	/>
 	<Button
 		android:text = "Relatório"
@@ -44,12 +46,12 @@
 		android:layout_gravity = "center"
 	/>
     <Button
-		android:text = "Desconectar-se"
-		android:layout_width="154.5dp"
-		android:layout_height="wrap_content"
-		android:minWidth="25px"
-		android:minHeight="25px"
-		android:id="@+id/btn_desconectar_menu"
-		android:layout_gravity = "center"
+        android:text = "Desconectar-se"
+        android:layout_width="194.0dp"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/btn_desconectar_menu"
+        android:layout_gravity = "center"
 	/>
 </LinearLayout>

@@ -405,7 +405,6 @@ C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\android\assets\Mono.Android.pdb
-C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\Projeto-Mobile.csprojAssemblyReference.cache
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\flata\7bf7dae11a7a799b4c34d7c168112dd747f65567.stamp
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\flata\dae2ddf677dc17f3fb929763a949020370f27a8a.stamp
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\flata\91484932a83c5234e5e8b0787e229f63fb8c9831.stamp
@@ -423,3 +422,6 @@ C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\android\src\md5952c01d8b4c34fff2c31ca4fd13263c8\InkPresenter.java
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\android\src\md5952c01d8b4c34fff2c31ca4fd13263c8\SignaturePadCanvasView.java
 C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\android\src\md5952c01d8b4c34fff2c31ca4fd13263c8\SignaturePadView.java
+C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\android\src\md52b9451d53d75363231a24cc367a53b45\Entregas.java
+C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\Projeto-Mobile.csprojAssemblyReference.cache
+C:\Users\Edson\Desktop\Projeto-ShellCode\Projeto-Mobile\Projeto-Mobile\obj\Debug\90\android\src\md52b9451d53d75363231a24cc367a53b45\EntregasAdapter.java

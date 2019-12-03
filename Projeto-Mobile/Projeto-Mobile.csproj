@@ -85,6 +85,8 @@
     <Compile Include="Class\Usuario.cs" />
     <Compile Include="Class\Veiculo.cs" />
     <Compile Include="Entrega.cs" />
+    <Compile Include="Entregas.cs" />
+    <Compile Include="EntregasAdapter.cs" />
     <Compile Include="Relatorio.cs" />
     <Compile Include="Motorista.cs" />
     <Compile Include="Login.cs" />

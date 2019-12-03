@@ -6,6 +6,7 @@
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:name="android.app.Application" android:debuggable="true">
     <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="md52b9451d53d75363231a24cc367a53b45.Entrega" />
+    <activity android:label="Entregas" android:name="md52b9451d53d75363231a24cc367a53b45.Entregas" />
     <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="md52b9451d53d75363231a24cc367a53b45.Relatorio" />
     <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="md52b9451d53d75363231a24cc367a53b45.Motorista" />
     <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="md52b9451d53d75363231a24cc367a53b45.Login">

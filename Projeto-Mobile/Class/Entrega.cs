@@ -107,7 +107,7 @@ namespace Projeto_Mobile.Class
                 while (dr.Read())
                 {
                     this.Id = dr.GetInt32(0);
-                    //this.Assinatura = dr.GetByte(1);
+                    this.Assinatura = BitConverter.GetBytes(dr.GetBytes(1, 0, null, 0, int.MaxValue));
                     this.Rg = dr.GetString(2);
                     this.Data = dr.GetDateTime(3);
                     this.Status = dr.GetString(4);
@@ -135,7 +135,7 @@ namespace Projeto_Mobile.Class
                 while (dr.Read())
                 {
                     e.Id = dr.GetInt32(0);
-                    //this.Assinatura = dr.GetByte(1);
+                    e.Assinatura = BitConverter.GetBytes(dr.GetBytes(1, 0, null, 0, int.MaxValue));
                     e.Rg = dr.GetString(2);
                     e.Data = dr.GetDateTime(3);
                     e.Status = dr.GetString(4);

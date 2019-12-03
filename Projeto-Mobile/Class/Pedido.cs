@@ -47,7 +47,7 @@ namespace Projeto_Mobile.Class
         //Métodos
         /// <summary>
         /// Inserindo um novo pedido
-        /// </summary>
+        /// </summary>        
         public void InserirPedido(string situacao, bool retirar, int idUsuario, int idCliente)
         {
             db = new Banco();
@@ -170,6 +170,31 @@ namespace Projeto_Mobile.Class
             {
                 e.Message.ToString();
                 return null;
+            }
+        }
+        public void consultarPedidNota(int idnota)
+        {
+            db = new Banco();
+            Pedido p;
+            List<Pedido> lista = new List<Pedido>();
+            try
+            {
+                var comm = db.AbrirConexao();
+                comm.CommandText = "select p.* from pedidos as p inner join carga as c on c.idPedidos = p.idPedidos inner join notatransporte as nt inner join itensnotatransporte as ints on nt.idNotaTransporte = ints.idNotaTransporte on c.idCarga = ints.idCarga where nt.idNotaTransporte = " + idnota;
+                var dr = comm.ExecuteReader();
+                while(dr.Read())
+                {                    
+                    this.Id = dr.GetInt32(0);
+                    this.Situacao = dr.GetString(1);
+                    this.DataPedido = dr.GetDateTime(2);
+                    this.Retirar = dr.GetBoolean(3);
+                    this.IdUsuario.Id = dr.GetInt32(4);
+                    this.IdCliente.Id = dr.GetInt32(5);                    
+                }                
+            }
+            catch (Exception e)
+            {
+                e.Message.ToString();                
             }
         }
     }

@@ -109,6 +109,40 @@ namespace Projeto_Mobile.Class
                 return false;
             }
         }
+        public List<Carga> ListarCargasNotaTransporte(int idnota)
+        {
+            db = new Banco();
+            List<Carga> listaCarga = new List<Carga>(); ;
+            try
+            {
+                var comm = db.AbrirConexao();
+                comm.CommandText = "select c.* from carga as c inner join notatransporte as nt inner join itensnotatransporte as ints on nt.idNotaTransporte = ints.idNotaTransporte on c.idCarga = ints.idCarga where nt.idNotaTransporte =" + idnota;
+                var dr = comm.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    Carga C = new Carga
+                    {
+                        Id = dr.GetInt32(0),
+                        Peso = dr.GetDouble(3),
+                        Largura = dr.GetDouble(4),
+                        Altura = dr.GetDouble(5),
+                        Comprimento = dr.GetDouble(6),
+                        NomeProduto = dr.GetString(7),
+                        DetalhesProduto = dr.GetString(8)
+                    };
+                    C.idTipo.Id = dr.GetInt32(1);
+                    C.idPedido.Id = dr.GetInt32(2);
+                    listaCarga.Add(C);
+                }
+                return listaCarga;
+            }
+            catch (Exception e)
+            {
+                e.Message.ToString();
+                return null;
+            }
+        }
         /// <summary>
         /// Consultand carga
         /// </summary>
