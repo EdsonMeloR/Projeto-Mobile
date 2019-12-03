@@ -78,6 +78,16 @@ namespace Projeto_Mobile
                     edtEnderecoRemetente.Text = endereco.Cep + ", " + endereco.Logradouro + ", N° " + endereco.Numero;
                     edtEnderecoRemetente.Enabled = false;
                 };
+                btnFinalizarEntrega.Click += delegate
+                {
+                    StartActivity(typeof(Entrega));
+                    Finish();
+                };
+                btnSair.Click += delegate
+                {
+                    StartActivity(typeof(Principal));
+                    Finish();
+                };
             }            
             catch(Exception ex)
             {
